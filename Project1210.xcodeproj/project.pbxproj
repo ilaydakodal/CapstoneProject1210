@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		882667A4261A02C400657C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667A3261A02C400657C23 /* AppDelegate.swift */; };
 		882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667A5261A02C400657C23 /* SceneDelegate.swift */; };
-		882667A8261A02C400657C23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667A7261A02C400657C23 /* ViewController.swift */; };
+		882667A8261A02C400657C23 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667A7261A02C400657C23 /* MainPageViewController.swift */; };
 		882667AB261A02C400657C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882667A9261A02C400657C23 /* Main.storyboard */; };
 		882667AE261A02C400657C23 /* Project1210.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 882667AC261A02C400657C23 /* Project1210.xcdatamodeld */; };
 		882667B0261A02C400657C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882667AF261A02C400657C23 /* Assets.xcassets */; };
 		882667B3261A02C400657C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882667B1261A02C400657C23 /* LaunchScreen.storyboard */; };
 		882667BE261A02C500657C23 /* Project1210Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667BD261A02C500657C23 /* Project1210Tests.swift */; };
 		882667C9261A02C500657C23 /* Project1210UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667C8261A02C500657C23 /* Project1210UITests.swift */; };
+		882667E5261A03FD00657C23 /* UIButton+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667E4261A03FD00657C23 /* UIButton+Styling.swift */; };
+		882667ED261A043300657C23 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667EC261A043300657C23 /* SignUpViewController.swift */; };
+		882667F2261A045300657C23 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667F1261A045300657C23 /* MapViewController.swift */; };
+		882667F7261A11A300657C23 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667F6261A11A300657C23 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,7 @@
 		882667A0261A02C400657C23 /* Project1210.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1210.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882667A3261A02C400657C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882667A5261A02C400657C23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		882667A7261A02C400657C23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		882667A7261A02C400657C23 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		882667AA261A02C400657C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		882667AD261A02C400657C23 /* Project1210.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project1210.xcdatamodel; sourceTree = "<group>"; };
 		882667AF261A02C400657C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +55,10 @@
 		882667C4261A02C500657C23 /* Project1210UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project1210UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		882667C8261A02C500657C23 /* Project1210UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1210UITests.swift; sourceTree = "<group>"; };
 		882667CA261A02C500657C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882667E4261A03FD00657C23 /* UIButton+Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Styling.swift"; sourceTree = "<group>"; };
+		882667EC261A043300657C23 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		882667F1261A045300657C23 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		882667F6261A11A300657C23 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,10 @@
 		882667A2261A02C400657C23 /* Project1210 */ = {
 			isa = PBXGroup;
 			children = (
-				882667A3261A02C400657C23 /* AppDelegate.swift */,
-				882667A5261A02C400657C23 /* SceneDelegate.swift */,
-				882667A7261A02C400657C23 /* ViewController.swift */,
+				882667D9261A033400657C23 /* Swift */,
 				882667A9261A02C400657C23 /* Main.storyboard */,
-				882667AF261A02C400657C23 /* Assets.xcassets */,
 				882667B1261A02C400657C23 /* LaunchScreen.storyboard */,
 				882667B4261A02C400657C23 /* Info.plist */,
-				882667AC261A02C400657C23 /* Project1210.xcdatamodeld */,
 			);
 			path = Project1210;
 			sourceTree = "<group>";
@@ -129,6 +133,78 @@
 				882667CA261A02C500657C23 /* Info.plist */,
 			);
 			path = Project1210UITests;
+			sourceTree = "<group>";
+		};
+		882667D9261A033400657C23 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				882667E0261A03A000657C23 /* Common */,
+				882667DA261A034000657C23 /* SupportingFiles */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		882667DA261A034000657C23 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				882667AF261A02C400657C23 /* Assets.xcassets */,
+				882667A3261A02C400657C23 /* AppDelegate.swift */,
+				882667A5261A02C400657C23 /* SceneDelegate.swift */,
+				882667AC261A02C400657C23 /* Project1210.xcdatamodeld */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		882667DE261A038C00657C23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				882667DF261A039700657C23 /* UI */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		882667DF261A039700657C23 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				882667E4261A03FD00657C23 /* UIButton+Styling.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		882667E0261A03A000657C23 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				882667DE261A038C00657C23 /* Extensions */,
+				882667E1261A03B800657C23 /* Features */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		882667E1261A03B800657C23 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				882667E2261A03C100657C23 /* Main */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		882667E2261A03C100657C23 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				882667E3261A03D800657C23 /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		882667E3261A03D800657C23 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				882667A7261A02C400657C23 /* MainPageViewController.swift */,
+				882667EC261A043300657C23 /* SignUpViewController.swift */,
+				882667F1261A045300657C23 /* MapViewController.swift */,
+				882667F6261A11A300657C23 /* LoginViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +337,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882667A8261A02C400657C23 /* ViewController.swift in Sources */,
+				882667ED261A043300657C23 /* SignUpViewController.swift in Sources */,
+				882667A8261A02C400657C23 /* MainPageViewController.swift in Sources */,
+				882667E5261A03FD00657C23 /* UIButton+Styling.swift in Sources */,
 				882667A4261A02C400657C23 /* AppDelegate.swift in Sources */,
+				882667F7261A11A300657C23 /* LoginViewController.swift in Sources */,
 				882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */,
 				882667AE261A02C400657C23 /* Project1210.xcdatamodeld in Sources */,
+				882667F2261A045300657C23 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
