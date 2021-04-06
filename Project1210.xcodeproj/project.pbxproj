@@ -20,6 +20,10 @@
 		882667ED261A043300657C23 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667EC261A043300657C23 /* SignUpViewController.swift */; };
 		882667F2261A045300657C23 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667F1261A045300657C23 /* MapViewController.swift */; };
 		882667F7261A11A300657C23 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667F6261A11A300657C23 /* LoginViewController.swift */; };
+		88266807261C730C00657C23 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88266805261C730C00657C23 /* UserProfileViewController.swift */; };
+		88266808261C730C00657C23 /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88266806261C730C00657C23 /* UserProfileViewController.xib */; };
+		88266820261CEC7300657C23 /* SymptomTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826681E261CEC7300657C23 /* SymptomTestViewController.swift */; };
+		88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8826681F261CEC7300657C23 /* SymptomTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		882667EC261A043300657C23 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		882667F1261A045300657C23 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		882667F6261A11A300657C23 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		88266805261C730C00657C23 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		88266806261C730C00657C23 /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		8826681E261CEC7300657C23 /* SymptomTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomTestViewController.swift; sourceTree = "<group>"; };
+		8826681F261CEC7300657C23 /* SymptomTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +199,7 @@
 		882667E2261A03C100657C23 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				88266804261C72E000657C23 /* View */,
 				882667E3261A03D800657C23 /* ViewController */,
 			);
 			path = Main;
@@ -199,12 +208,23 @@
 		882667E3261A03D800657C23 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				882667A7261A02C400657C23 /* MainPageViewController.swift */,
-				882667EC261A043300657C23 /* SignUpViewController.swift */,
-				882667F1261A045300657C23 /* MapViewController.swift */,
 				882667F6261A11A300657C23 /* LoginViewController.swift */,
+				882667A7261A02C400657C23 /* MainPageViewController.swift */,
+				882667F1261A045300657C23 /* MapViewController.swift */,
+				882667EC261A043300657C23 /* SignUpViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		88266804261C72E000657C23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88266805261C730C00657C23 /* UserProfileViewController.swift */,
+				88266806261C730C00657C23 /* UserProfileViewController.xib */,
+				8826681E261CEC7300657C23 /* SymptomTestViewController.swift */,
+				8826681F261CEC7300657C23 /* SymptomTestViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +331,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				882667B3261A02C400657C23 /* LaunchScreen.storyboard in Resources */,
+				88266808261C730C00657C23 /* UserProfileViewController.xib in Resources */,
+				88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */,
 				882667B0261A02C400657C23 /* Assets.xcassets in Resources */,
 				882667AB261A02C400657C23 /* Main.storyboard in Resources */,
 			);
@@ -339,11 +361,13 @@
 			files = (
 				882667ED261A043300657C23 /* SignUpViewController.swift in Sources */,
 				882667A8261A02C400657C23 /* MainPageViewController.swift in Sources */,
+				88266820261CEC7300657C23 /* SymptomTestViewController.swift in Sources */,
 				882667E5261A03FD00657C23 /* UIButton+Styling.swift in Sources */,
 				882667A4261A02C400657C23 /* AppDelegate.swift in Sources */,
 				882667F7261A11A300657C23 /* LoginViewController.swift in Sources */,
 				882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */,
 				882667AE261A02C400657C23 /* Project1210.xcdatamodeld in Sources */,
+				88266807261C730C00657C23 /* UserProfileViewController.swift in Sources */,
 				882667F2261A045300657C23 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

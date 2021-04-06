@@ -15,4 +15,3 @@ class LoginViewController: UIViewController {
         loginButton.applyDefaultStyling(color: .black)
     }
 }
-

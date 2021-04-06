@@ -213,14 +213,18 @@
             </objects>
             <point key="canvasLocation" x="-3748" y="978"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="Kqo-r1-yfT">
             <objects>
-                <viewController id="iOR-DA-2LR" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="iOR-DA-2LR" customClass="MapViewController" customModule="Project1210" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bpN-j4-eOP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-CX-tOc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.5652808547" green="0.71115553379999996" blue="0.98114544150000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RgC-if-0Tf">
                                 <rect key="frame" x="0.0" y="32" width="414" height="44"/>
                                 <color key="barTintColor" red="0.5652808547" green="0.71115553379999996" blue="0.98114544150000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -237,17 +241,47 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezn-k5-IB1">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem title="Item" width="128.5" id="6GW-sT-45o">
-                                        <imageReference key="image" image="person.circle" catalog="system" symbolScale="large"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <barButtonItem style="plain" id="FH6-u8-xia">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" restorationIdentifier="MapView" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Slu-wx-zrn">
+                                            <rect key="frame" x="20" y="15" width="25" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal">
+                                                <color key="titleColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <imageReference key="image" image="person.circle" catalog="system" symbolScale="large"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="MyPageButtonPressed:" destination="iOR-DA-2LR" eventType="touchUpInside" id="qWD-5I-jmU"/>
+                                            </connections>
+                                        </button>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" width="133" id="uAH-5w-cEW">
-                                        <imageReference key="image" image="mappin.circle" catalog="system" symbolScale="large"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <barButtonItem style="plain" id="hAT-Q8-uXg">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JGm-3a-ULT">
+                                            <rect key="frame" x="45" y="15" width="304" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal">
+                                                <color key="titleColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <imageReference key="image" image="mappin.circle" catalog="system" symbolScale="large"/>
+                                            </state>
+                                        </button>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" width="231" id="eMv-2f-cAp">
-                                        <imageReference key="image" image="pencil.and.outline" catalog="system" symbolScale="large"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <barButtonItem style="plain" id="PRN-lQ-0Za">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uI7-fC-FQS">
+                                            <rect key="frame" x="368" y="14.5" width="26" height="25.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal">
+                                                <color key="titleColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <imageReference key="image" image="pencil.and.outline" catalog="system" symbolScale="large"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="symptomTestButtonPressed:" destination="iOR-DA-2LR" eventType="touchUpInside" id="JMk-aK-yun"/>
+                                            </connections>
+                                        </button>
+                                        <connections>
+                                            <action selector="symptomTestButtonPressed:" destination="iOR-DA-2LR" id="XYY-Co-Y2W"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                                 <color key="barTintColor" red="0.31181344389999999" green="0.37203043699999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -257,8 +291,11 @@
                         <color key="backgroundColor" red="0.5652808547" green="0.71115553379999996" blue="0.98114544150000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="systemIndigoColor"/>
                         <constraints>
+                            <constraint firstItem="7KH-CX-tOc" firstAttribute="top" secondItem="bpN-j4-eOP" secondAttribute="top" id="2DC-Qf-agO"/>
+                            <constraint firstItem="7KH-CX-tOc" firstAttribute="leading" secondItem="5j5-vq-K5R" secondAttribute="leading" id="AK2-Mx-Lrf"/>
                             <constraint firstItem="NIh-fD-jWT" firstAttribute="top" secondItem="RgC-if-0Tf" secondAttribute="bottom" id="BP1-1S-SvZ"/>
                             <constraint firstItem="ezn-k5-IB1" firstAttribute="top" secondItem="NIh-fD-jWT" secondAttribute="bottom" id="CG2-Mg-uth"/>
+                            <constraint firstItem="5j5-vq-K5R" firstAttribute="trailing" secondItem="7KH-CX-tOc" secondAttribute="trailing" id="Ene-Jf-9OR"/>
                             <constraint firstItem="ezn-k5-IB1" firstAttribute="trailing" secondItem="5j5-vq-K5R" secondAttribute="trailing" id="FLy-nZ-j41"/>
                             <constraint firstItem="RgC-if-0Tf" firstAttribute="leading" secondItem="5j5-vq-K5R" secondAttribute="leading" id="I1i-Vd-y4c"/>
                             <constraint firstItem="ezn-k5-IB1" firstAttribute="leading" secondItem="5j5-vq-K5R" secondAttribute="leading" id="MwQ-pY-OS7"/>
@@ -267,13 +304,14 @@
                             <constraint firstItem="5j5-vq-K5R" firstAttribute="bottom" secondItem="ezn-k5-IB1" secondAttribute="bottom" id="bax-B1-BeL"/>
                             <constraint firstItem="NIh-fD-jWT" firstAttribute="trailing" secondItem="5j5-vq-K5R" secondAttribute="trailing" id="dNz-69-G9G"/>
                             <constraint firstItem="NIh-fD-jWT" firstAttribute="centerX" secondItem="5j5-vq-K5R" secondAttribute="centerX" id="nVh-0U-lUf"/>
+                            <constraint firstAttribute="bottom" secondItem="7KH-CX-tOc" secondAttribute="bottom" id="nZV-RD-vwt"/>
                             <constraint firstItem="NIh-fD-jWT" firstAttribute="leading" secondItem="5j5-vq-K5R" secondAttribute="leading" id="rx3-EQ-zbK"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxF-0a-ubi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2532" y="978"/>
+            <point key="canvasLocation" x="-2533.3333333333335" y="977.67857142857133"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="YAo-vO-sch">
