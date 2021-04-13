@@ -223,13 +223,13 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-CX-tOc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" red="0.5652808547" green="0.71115553379999996" blue="0.98114544150000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RgC-if-0Tf">
                                 <rect key="frame" x="0.0" y="32" width="414" height="44"/>
-                                <color key="barTintColor" red="0.5652808547" green="0.71115553379999996" blue="0.98114544150000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Covid-19 App" id="pOi-7S-nVa"/>
@@ -243,7 +243,7 @@
                                 <items>
                                     <barButtonItem style="plain" id="FH6-u8-xia">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" restorationIdentifier="MapView" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Slu-wx-zrn">
-                                            <rect key="frame" x="20" y="15" width="25" height="24"/>
+                                            <rect key="frame" x="20" y="15" width="89" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="tintColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal">
@@ -257,7 +257,7 @@
                                     </barButtonItem>
                                     <barButtonItem style="plain" id="hAT-Q8-uXg">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JGm-3a-ULT">
-                                            <rect key="frame" x="45" y="15" width="304" height="24"/>
+                                            <rect key="frame" x="109" y="15" width="198" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="tintColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal">
@@ -268,7 +268,7 @@
                                     </barButtonItem>
                                     <barButtonItem style="plain" id="PRN-lQ-0Za">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uI7-fC-FQS">
-                                            <rect key="frame" x="368" y="14.5" width="26" height="25.5"/>
+                                            <rect key="frame" x="307" y="14" width="87" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="tintColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal">
@@ -284,7 +284,7 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="barTintColor" red="0.31181344389999999" green="0.37203043699999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5j5-vq-K5R"/>
