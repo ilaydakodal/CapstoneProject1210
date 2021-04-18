@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SQLite
 
 class MapViewController: UIViewController {
     

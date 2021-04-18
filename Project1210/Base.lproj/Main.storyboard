@@ -418,6 +418,9 @@
                                     <segment title="Female"/>
                                     <segment title="Male"/>
                                 </segments>
+                                <connections>
+                                    <action selector="genderSelected:" destination="az9-D7-4eC" eventType="valueChanged" id="FgN-Be-EQl"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jon" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2lL-br-Y0y">
                                 <rect key="frame" x="92" y="284.5" width="230" height="34"/>
@@ -438,6 +441,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpButtonPressed:" destination="az9-D7-4eC" eventType="touchUpInside" id="sWJ-PV-o44"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" verticalCompressionResistancePriority="754" translatesAutoresizingMaskIntoConstraints="NO" id="hnb-1Z-NHp">
                                 <rect key="frame" x="0.0" y="32" width="414" height="44"/>
@@ -512,7 +518,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dateOfBirthTextField" destination="CbN-lw-Eg7" id="bFM-1p-qzm"/>
+                        <outlet property="genderSegmentControl" destination="hc6-7J-4Yk" id="6wt-Ym-opy"/>
+                        <outlet property="nameTextField" destination="2lL-br-Y0y" id="dEI-Dt-koY"/>
+                        <outlet property="passwordTextField" destination="eso-wG-rPP" id="yIL-pB-1BB"/>
+                        <outlet property="passwordValidationTextField" destination="9Ql-cK-xFs" id="weY-5o-BhN"/>
                         <outlet property="signUpButton" destination="lzQ-1t-fKg" id="SNm-wd-vbS"/>
+                        <outlet property="surnameTextField" destination="lty-qr-G5Y" id="W5v-A8-Zgh"/>
+                        <outlet property="usernameTextField" destination="SZJ-gC-C0p" id="QHm-Qy-re2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GYz-FS-2SB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
