@@ -26,8 +26,8 @@ class DataBaseModel {
         do{
             let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             let fileUrl = documentDirectory.appendingPathComponent("user").appendingPathExtension("sqlite3")
-            var database = try Connection(fileUrl.path)
-            database = db
+            let database = try Connection(fileUrl.path)
+            db = database
         } catch {
             print(error)
         }
