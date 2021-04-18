@@ -29,6 +29,7 @@
 		88D43E2C262B16AB00A6CD6A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E2B262B16AB00A6CD6A /* UserModel.swift */; };
 		88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E40262C1E2700A6CD6A /* DateFormatter.swift */; };
 		88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */; };
+		88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		88D43E2B262B16AB00A6CD6A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		88D43E40262C1E2700A6CD6A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexFormatter.swift; sourceTree = "<group>"; };
+		88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 				882667A7261A02C400657C23 /* MainPageViewController.swift */,
 				882667F1261A045300657C23 /* MapViewController.swift */,
 				882667EC261A043300657C23 /* SignUpViewController.swift */,
+				88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */,
 				88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */,
 				882667AE261A02C400657C23 /* Project1210.xcdatamodeld in Sources */,
+				88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */,
 				88266807261C730C00657C23 /* UserProfileViewController.swift in Sources */,
 				88D43E2C262B16AB00A6CD6A /* UserModel.swift in Sources */,
 				882667F2261A045300657C23 /* MapViewController.swift in Sources */,
