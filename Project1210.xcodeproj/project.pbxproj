@@ -30,6 +30,8 @@
 		88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E40262C1E2700A6CD6A /* DateFormatter.swift */; };
 		88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */; };
 		88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */; };
+		88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E85262C604500A6CD6A /* UserListTableViewController.swift */; };
+		88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43E86262C604500A6CD6A /* UserListTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		88D43E40262C1E2700A6CD6A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexFormatter.swift; sourceTree = "<group>"; };
 		88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
+		88D43E85262C604500A6CD6A /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
+		88D43E86262C604500A6CD6A /* UserListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +242,8 @@
 				88266806261C730C00657C23 /* UserProfileViewController.xib */,
 				8826681E261CEC7300657C23 /* SymptomTestViewController.swift */,
 				8826681F261CEC7300657C23 /* SymptomTestViewController.xib */,
+				88D43E85262C604500A6CD6A /* UserListTableViewController.swift */,
+				88D43E86262C604500A6CD6A /* UserListTableViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				88266808261C730C00657C23 /* UserProfileViewController.xib in Resources */,
 				88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */,
 				882667B0261A02C400657C23 /* Assets.xcassets in Resources */,
+				88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */,
 				882667AB261A02C400657C23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +415,7 @@
 				882667F7261A11A300657C23 /* LoginViewController.swift in Sources */,
 				882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */,
 				88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */,
+				88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */,
 				882667AE261A02C400657C23 /* Project1210.xcdatamodeld in Sources */,
 				88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */,
 				88266807261C730C00657C23 /* UserProfileViewController.swift in Sources */,
