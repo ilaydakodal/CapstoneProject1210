@@ -239,8 +239,9 @@
                                     <navigationItem title="Covid-19 App" id="pOi-7S-nVa"/>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NIh-fD-jWT">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="mutedStandard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIh-fD-jWT">
                                 <rect key="frame" x="0.0" y="76" width="414" height="737"/>
+                                <color key="backgroundColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezn-k5-IB1">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
@@ -269,6 +270,9 @@
                                                 <imageReference key="image" image="mappin.circle" catalog="system" symbolScale="large"/>
                                             </state>
                                         </button>
+                                        <connections>
+                                            <action selector="PinButtonPressed:" destination="iOR-DA-2LR" id="SIB-yU-hGh"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" id="PRN-lQ-0Za">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uI7-fC-FQS">
@@ -312,6 +316,9 @@
                             <constraint firstItem="NIh-fD-jWT" firstAttribute="leading" secondItem="5j5-vq-K5R" secondAttribute="leading" id="rx3-EQ-zbK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="NIh-fD-jWT" id="utL-ot-LDu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxF-0a-ubi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

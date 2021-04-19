@@ -37,6 +37,7 @@
 		88D43E9B262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */; };
 		88D43ECA262DB2A900A6CD6A /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43EC8262DB2A800A6CD6A /* LogViewController.swift */; };
 		88D43ECB262DB2A900A6CD6A /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43EC9262DB2A800A6CD6A /* LogViewController.xib */; };
+		88D43EE8262E143A00A6CD6A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43EE7262E143A00A6CD6A /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CoronaPredictModelFinal.mlmodel; path = ../../../../../Downloads/CoronaPredictModelFinal.mlmodel; sourceTree = "<group>"; };
 		88D43EC8262DB2A800A6CD6A /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		88D43EC9262DB2A800A6CD6A /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
+		88D43EE7262E143A00A6CD6A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		882667E0261A03A000657C23 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				88D43EE6262E142700A6CD6A /* Manager */,
 				88D43E94262D65E900A6CD6A /* Algorithm */,
 				882667DE261A038C00657C23 /* Extensions */,
 			);
@@ -359,6 +362,14 @@
 				88D43EC9262DB2A800A6CD6A /* LogViewController.xib */,
 			);
 			path = LogView;
+			sourceTree = "<group>";
+		};
+		88D43EE6262E142700A6CD6A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				88D43EE7262E143A00A6CD6A /* LocationManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,6 +529,7 @@
 				88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */,
 				882667AE261A02C400657C23 /* Project1210.xcdatamodeld in Sources */,
 				88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */,
+				88D43EE8262E143A00A6CD6A /* LocationManager.swift in Sources */,
 				88266807261C730C00657C23 /* UserProfileViewController.swift in Sources */,
 				88D43E2C262B16AB00A6CD6A /* UserModel.swift in Sources */,
 				882667F2261A045300657C23 /* MapViewController.swift in Sources */,

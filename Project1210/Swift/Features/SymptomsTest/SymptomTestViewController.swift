@@ -97,17 +97,20 @@ class SymptomTestViewController: UIViewController {
         if questionNumber == 0 {
             answerButtonA.isHidden = false
         }
+        
         if sender.tag == selectedAnswer {
             updateQuestions()
             updateUI()
         }
-        if answerButtonA.tag == 0 && answerButtonA.titleLabel?.text == "Great!" {
+        
+        if  answerButtonA.isTouchInside && questionNumber == 2 {
             questionLabel.text = "Have a gerat day!"
             answerButtonA.isHidden = true
             progressBar.isHidden = true
             answerButtonB.setTitle("Exit", for: .normal)
         }
-        if answerButtonB.titleLabel?.text == "Exit" && answerButtonB.tag == 0 {
+        
+        if answerButtonB.titleLabel?.text == "Exit" && answerButtonB.isTouchInside {
             DispatchQueue.main.async {
                 self.dismiss(animated: true, completion: nil)
             }
