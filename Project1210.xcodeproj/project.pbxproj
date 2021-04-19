@@ -35,6 +35,8 @@
 		88D43E8D262C75B600A6CD6A /* SymptomQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */; };
 		88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */; };
 		88D43E9B262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */; };
+		88D43ECA262DB2A900A6CD6A /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43EC8262DB2A800A6CD6A /* LogViewController.swift */; };
+		88D43ECB262DB2A900A6CD6A /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43EC9262DB2A800A6CD6A /* LogViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomQuestionModel.swift; sourceTree = "<group>"; };
 		88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Algorithm+Swift.swift"; sourceTree = "<group>"; };
 		88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CoronaPredictModelFinal.mlmodel; path = ../../../../../Downloads/CoronaPredictModelFinal.mlmodel; sourceTree = "<group>"; };
+		88D43EC8262DB2A800A6CD6A /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		88D43EC9262DB2A800A6CD6A /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +251,8 @@
 		88266804261C72E000657C23 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88D43EC7262DB26900A6CD6A /* LogView */,
+				88D43EC6262DB26200A6CD6A /* TableView */,
 				88D43E85262C604500A6CD6A /* UserListTableViewController.swift */,
 				88D43E86262C604500A6CD6A /* UserListTableViewController.xib */,
 			);
@@ -337,6 +343,22 @@
 				88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		88D43EC6262DB26200A6CD6A /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		88D43EC7262DB26900A6CD6A /* LogView */ = {
+			isa = PBXGroup;
+			children = (
+				88D43EC8262DB2A800A6CD6A /* LogViewController.swift */,
+				88D43EC9262DB2A800A6CD6A /* LogViewController.xib */,
+			);
+			path = LogView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +473,7 @@
 				882667B3261A02C400657C23 /* LaunchScreen.storyboard in Resources */,
 				88266808261C730C00657C23 /* UserProfileViewController.xib in Resources */,
 				88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */,
+				88D43ECB262DB2A900A6CD6A /* LogViewController.xib in Resources */,
 				882667B0261A02C400657C23 /* Assets.xcassets in Resources */,
 				88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */,
 				882667AB261A02C400657C23 /* Main.storyboard in Resources */,
@@ -489,6 +512,7 @@
 				882667E5261A03FD00657C23 /* UIButton+Styling.swift in Sources */,
 				882667A4261A02C400657C23 /* AppDelegate.swift in Sources */,
 				882667F7261A11A300657C23 /* LoginViewController.swift in Sources */,
+				88D43ECA262DB2A900A6CD6A /* LogViewController.swift in Sources */,
 				882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */,
 				88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */,
 				88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */,
