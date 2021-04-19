@@ -216,29 +216,30 @@
 		882667E1261A03B800657C23 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				882667E2261A03C100657C23 /* Main */,
+				88D43EB8262DA50100A6CD6A /* Admin */,
+				88D43EB0262DA40900A6CD6A /* LoginPage */,
+				882667E2261A03C100657C23 /* MainPage */,
+				88D43EB4262DA44F00A6CD6A /* MapView */,
+				88D43E22262B137E00A6CD6A /* Model */,
+				88D43EB7262DA4E600A6CD6A /* SignUp */,
+				88D43EB6262DA4BC00A6CD6A /* SymptomsTest */,
+				88D43EB5262DA48600A6CD6A /* UserProfileInfo */,
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		882667E2261A03C100657C23 /* Main */ = {
+		882667E2261A03C100657C23 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
-				88D43E22262B137E00A6CD6A /* Model */,
-				88266804261C72E000657C23 /* View */,
 				882667E3261A03D800657C23 /* ViewController */,
 			);
-			path = Main;
+			path = MainPage;
 			sourceTree = "<group>";
 		};
 		882667E3261A03D800657C23 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				882667F6261A11A300657C23 /* LoginViewController.swift */,
 				882667A7261A02C400657C23 /* MainPageViewController.swift */,
-				882667F1261A045300657C23 /* MapViewController.swift */,
-				882667EC261A043300657C23 /* SignUpViewController.swift */,
-				88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -246,10 +247,6 @@
 		88266804261C72E000657C23 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				88266805261C730C00657C23 /* UserProfileViewController.swift */,
-				88266806261C730C00657C23 /* UserProfileViewController.xib */,
-				8826681E261CEC7300657C23 /* SymptomTestViewController.swift */,
-				8826681F261CEC7300657C23 /* SymptomTestViewController.xib */,
 				88D43E85262C604500A6CD6A /* UserListTableViewController.swift */,
 				88D43E86262C604500A6CD6A /* UserListTableViewController.xib */,
 			);
@@ -260,8 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				88D43E23262B13B800A6CD6A /* DataBaseModel.swift */,
-				88D43E2B262B16AB00A6CD6A /* UserModel.swift */,
 				88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */,
+				88D43E2B262B16AB00A6CD6A /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +278,65 @@
 				88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */,
 			);
 			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		88D43EB0262DA40900A6CD6A /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				882667F6261A11A300657C23 /* LoginViewController.swift */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		88D43EB4262DA44F00A6CD6A /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				882667F1261A045300657C23 /* MapViewController.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		88D43EB5262DA48600A6CD6A /* UserProfileInfo */ = {
+			isa = PBXGroup;
+			children = (
+				88266805261C730C00657C23 /* UserProfileViewController.swift */,
+				88266806261C730C00657C23 /* UserProfileViewController.xib */,
+			);
+			path = UserProfileInfo;
+			sourceTree = "<group>";
+		};
+		88D43EB6262DA4BC00A6CD6A /* SymptomsTest */ = {
+			isa = PBXGroup;
+			children = (
+				8826681E261CEC7300657C23 /* SymptomTestViewController.swift */,
+				8826681F261CEC7300657C23 /* SymptomTestViewController.xib */,
+			);
+			path = SymptomsTest;
+			sourceTree = "<group>";
+		};
+		88D43EB7262DA4E600A6CD6A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				882667EC261A043300657C23 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		88D43EB8262DA50100A6CD6A /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				88266804261C72E000657C23 /* View */,
+				88D43EB9262DA53700A6CD6A /* ViewController */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		88D43EB9262DA53700A6CD6A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
