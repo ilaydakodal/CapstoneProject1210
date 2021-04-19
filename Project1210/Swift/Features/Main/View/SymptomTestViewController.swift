@@ -101,7 +101,7 @@ class SymptomTestViewController: UIViewController {
             updateQuestions()
             updateUI()
         }
-        if answerButtonA.tag == 0 &&answerButtonA.titleLabel?.text == "Great!" {
+        if answerButtonA.tag == 0 && answerButtonA.titleLabel?.text == "Great!" {
             questionLabel.text = "Have a gerat day!"
             answerButtonA.isHidden = true
             progressBar.isHidden = true
