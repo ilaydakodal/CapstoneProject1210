@@ -67,5 +67,8 @@ class DataBaseModel {
 
     }
     
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }

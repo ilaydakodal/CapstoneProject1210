@@ -34,9 +34,15 @@
 		88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E85262C604500A6CD6A /* UserListTableViewController.swift */; };
 		88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43E86262C604500A6CD6A /* UserListTableViewController.xib */; };
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		88D43E8D262C75B600A6CD6A /* SymptomQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */; };
 		88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */; };
 		88D43E9B262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */; };
+=======
+		C7B26C78262C8DB800C6743C /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B26C76262C8DB800C6743C /* UserListTableViewCell.swift */; };
+		C7B26C79262C8DB800C6743C /* UserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B26C77262C8DB800C6743C /* UserListTableViewCell.xib */; };
+		C7C29399262C85CB006B27CF /* UserListTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C29398262C85CB006B27CF /* UserListTableController.swift */; };
+>>>>>>> Stashed changes
 =======
 		C7B26C78262C8DB800C6743C /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B26C76262C8DB800C6743C /* UserListTableViewCell.swift */; };
 		C7B26C79262C8DB800C6743C /* UserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B26C77262C8DB800C6743C /* UserListTableViewCell.xib */; };
@@ -95,14 +101,20 @@
 		88D43E85262C604500A6CD6A /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
 		88D43E86262C604500A6CD6A /* UserListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewController.xib; sourceTree = "<group>"; };
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomQuestionModel.swift; sourceTree = "<group>"; };
 		88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Algorithm+Swift.swift"; sourceTree = "<group>"; };
 		88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CoronaPredictModelFinal.mlmodel; path = ../../../../../Downloads/CoronaPredictModelFinal.mlmodel; sourceTree = "<group>"; };
 =======
+=======
+>>>>>>> Stashed changes
 		C2DDE2E6D40CB889AFFD10E5 /* Pods_Project1210.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project1210.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B26C76262C8DB800C6743C /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
 		C7B26C77262C8DB800C6743C /* UserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewCell.xib; sourceTree = "<group>"; };
 		C7C29398262C85CB006B27CF /* UserListTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableController.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 /* End PBXFileReference section */
 
@@ -306,6 +318,7 @@
 			sourceTree = "<group>";
 		};
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		88D43E94262D65E900A6CD6A /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +326,8 @@
 			);
 			path = Algorithm;
 =======
+=======
+>>>>>>> Stashed changes
 		CAEBAB5D986E5D3DD0A8F89F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +335,9 @@
 				21CCE039301AF8BBF916DEF9 /* Pods-Project1210.release.xcconfig */,
 			);
 			path = Pods;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 			sourceTree = "<group>";
 		};
@@ -512,7 +530,11 @@
 				88D43E9B262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */,
 				88D43E24262B13B800A6CD6A /* DataBaseModel.swift in Sources */,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */,
+=======
+				C7C29399262C85CB006B27CF /* UserListTableController.swift in Sources */,
+>>>>>>> Stashed changes
 =======
 				C7C29399262C85CB006B27CF /* UserListTableController.swift in Sources */,
 >>>>>>> Stashed changes
