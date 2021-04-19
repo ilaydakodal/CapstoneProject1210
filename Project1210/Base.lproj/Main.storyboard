@@ -241,7 +241,7 @@
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="mutedStandard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIh-fD-jWT">
                                 <rect key="frame" x="0.0" y="76" width="414" height="737"/>
-                                <color key="backgroundColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezn-k5-IB1">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
@@ -261,7 +261,7 @@
                                         </button>
                                     </barButtonItem>
                                     <barButtonItem style="plain" id="hAT-Q8-uXg">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JGm-3a-ULT">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" id="JGm-3a-ULT">
                                             <rect key="frame" x="109" y="15" width="198" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="tintColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -269,6 +269,9 @@
                                                 <color key="titleColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <imageReference key="image" image="mappin.circle" catalog="system" symbolScale="large"/>
                                             </state>
+                                            <connections>
+                                                <action selector="PinButtonPressed:" destination="iOR-DA-2LR" eventType="touchUpInside" id="E5b-JY-WKt"/>
+                                            </connections>
                                         </button>
                                         <connections>
                                             <action selector="PinButtonPressed:" destination="iOR-DA-2LR" id="SIB-yU-hGh"/>
@@ -656,6 +659,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
