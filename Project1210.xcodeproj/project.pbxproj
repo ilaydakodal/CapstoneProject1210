@@ -32,6 +32,9 @@
 		88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */; };
 		88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E85262C604500A6CD6A /* UserListTableViewController.swift */; };
 		88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43E86262C604500A6CD6A /* UserListTableViewController.xib */; };
+		88D43E8D262C75B600A6CD6A /* SymptomQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */; };
+		88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */; };
+		88D43E9B262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
 		88D43E85262C604500A6CD6A /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
 		88D43E86262C604500A6CD6A /* UserListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewController.xib; sourceTree = "<group>"; };
+		88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomQuestionModel.swift; sourceTree = "<group>"; };
+		88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Algorithm+Swift.swift"; sourceTree = "<group>"; };
+		88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CoronaPredictModelFinal.mlmodel; path = ../../../../../Downloads/CoronaPredictModelFinal.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 				882667A9261A02C400657C23 /* Main.storyboard */,
 				882667B1261A02C400657C23 /* LaunchScreen.storyboard */,
 				882667B4261A02C400657C23 /* Info.plist */,
+				88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */,
 			);
 			path = Project1210;
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 		882667E0261A03A000657C23 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				88D43E94262D65E900A6CD6A /* Algorithm */,
 				882667DE261A038C00657C23 /* Extensions */,
 			);
 			path = Common;
@@ -253,6 +261,7 @@
 			children = (
 				88D43E23262B13B800A6CD6A /* DataBaseModel.swift */,
 				88D43E2B262B16AB00A6CD6A /* UserModel.swift */,
+				88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +273,14 @@
 				88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */,
 			);
 			path = Formatter;
+			sourceTree = "<group>";
+		};
+		88D43E94262D65E900A6CD6A /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */,
+			);
+			path = Algorithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,8 +422,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D43E8D262C75B600A6CD6A /* SymptomQuestionModel.swift in Sources */,
 				882667ED261A043300657C23 /* SignUpViewController.swift in Sources */,
+				88D43E9B262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */,
 				88D43E24262B13B800A6CD6A /* DataBaseModel.swift in Sources */,
+				88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */,
 				882667A8261A02C400657C23 /* MainPageViewController.swift in Sources */,
 				88266820261CEC7300657C23 /* SymptomTestViewController.swift in Sources */,
 				88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */,

@@ -22,6 +22,16 @@ class DataBaseModel {
     let dateOfBirth = Expression<Date>("dateOfBirth")
     let userPassword = Expression<String>("userPassword")
     
+    let symptomQuestions = Table("symptomQuestions")
+    let adminId = Expression<Int64>("adminId")
+    let fever = Expression<String>("fever")
+    let cough  = Expression<String>("cough")
+    let sore_throat  = Expression<Bool>("sore_throat")
+    let shortness_of_breath  = Expression<Date>("shortness_of_breath")
+    let headache  = Expression<String>("headache")
+    let age_60_and_above  = Expression<String>("age_60_and_above")
+    let gender_1  = Expression<String>("gender")
+    
     func connection(){
         do{
             let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -49,9 +59,5 @@ class DataBaseModel {
         } catch {
             print(error)
         }
-    }
-    func registerUser() {
-        print("SignUp button tapped")
-
     }
 }

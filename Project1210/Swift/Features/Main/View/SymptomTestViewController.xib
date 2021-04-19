@@ -9,10 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SymptomTestViewController" customModule="Project1210" customModuleProvider="target">
             <connections>
-                <outlet property="testButtonFour" destination="GF2-tf-AJY" id="BJZ-Ic-R4c"/>
-                <outlet property="testButtonOne" destination="aat-Si-9Dy" id="Esk-Lb-3ID"/>
-                <outlet property="testButtonThree" destination="oDU-HZ-duo" id="YQx-6e-RJI"/>
-                <outlet property="testButtonTwo" destination="sbR-ct-bVm" id="sWY-lu-wHN"/>
+                <outlet property="answerButtonA" destination="aat-Si-9Dy" id="Esk-Lb-3ID"/>
+                <outlet property="answerButtonB" destination="sbR-ct-bVm" id="sWY-lu-wHN"/>
+                <outlet property="progressBar" destination="i4K-cR-SmP" id="0Qe-5s-smf"/>
+                <outlet property="questionLabel" destination="iuC-Y1-Gca" id="VMN-m7-KLs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,8 +21,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling today? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuC-Y1-Gca">
-                    <rect key="frame" x="45" y="134" width="324" height="34.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Start!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuC-Y1-Gca">
+                    <rect key="frame" x="67" y="134" width="280" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="GpK-22-tHR"/>
+                        <constraint firstAttribute="width" constant="280" id="yPU-0K-9sL"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
                     <color key="textColor" red="1" green="0.45755505559999998" blue="0.3818738163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -36,7 +40,7 @@
                     <color key="progressTintColor" red="1" green="0.45755505559999998" blue="0.3818738163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </progressView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aat-Si-9Dy">
-                    <rect key="frame" x="67" y="250.5" width="280" height="50"/>
+                    <rect key="frame" x="67" y="416" width="280" height="50"/>
                     <color key="backgroundColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="UPw-WQ-A2J"/>
@@ -46,9 +50,12 @@
                     <state key="normal" title="Great! ">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="zhn-wh-WNa"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbR-ct-bVm">
-                    <rect key="frame" x="67" y="324.5" width="280" height="50"/>
+                    <rect key="frame" x="67" y="490" width="280" height="50"/>
                     <color key="backgroundColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="280" id="0bK-Cb-TdJ"/>
@@ -58,30 +65,9 @@
                     <state key="normal" title="Good but a little sore ">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDU-HZ-duo">
-                    <rect key="frame" x="67" y="398.5" width="280" height="50"/>
-                    <color key="backgroundColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="AKf-8b-5PU"/>
-                        <constraint firstAttribute="width" constant="280" id="GwO-wS-4fJ"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <state key="normal" title="Not that great ">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GF2-tf-AJY">
-                    <rect key="frame" x="67" y="472.5" width="280" height="50"/>
-                    <color key="backgroundColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="280" id="LfZ-O1-GNb"/>
-                        <constraint firstAttribute="height" constant="50" id="bZZ-iZ-GQt"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <state key="normal" title="Terrible ">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="C8L-Ph-o01"/>
+                    </connections>
                 </button>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCQ-TS-EeM">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -102,14 +88,12 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="i4K-cR-SmP" secondAttribute="bottom" constant="30" id="6Ek-AQ-jvd"/>
                 <constraint firstItem="iuC-Y1-Gca" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="7Ri-hn-opS"/>
                 <constraint firstItem="iuC-Y1-Gca" firstAttribute="top" secondItem="SCQ-TS-EeM" secondAttribute="bottom" constant="90" id="GCX-mn-1zd"/>
-                <constraint firstItem="GF2-tf-AJY" firstAttribute="top" secondItem="oDU-HZ-duo" secondAttribute="bottom" constant="24" id="HQa-BG-hKP"/>
                 <constraint firstItem="SCQ-TS-EeM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Kc7-yo-xH1"/>
-                <constraint firstItem="GF2-tf-AJY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="NC7-tE-nIX"/>
                 <constraint firstItem="sbR-ct-bVm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="NKD-gh-bUJ"/>
                 <constraint firstItem="aat-Si-9Dy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Zoy-d4-21g"/>
-                <constraint firstItem="oDU-HZ-duo" firstAttribute="top" secondItem="sbR-ct-bVm" secondAttribute="bottom" constant="24" id="k1M-VP-wed"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iuC-Y1-Gca" secondAttribute="trailing" constant="67" id="e3M-pz-zsP"/>
                 <constraint firstAttribute="trailing" secondItem="SCQ-TS-EeM" secondAttribute="trailing" id="nlL-Gn-yYg"/>
-                <constraint firstItem="oDU-HZ-duo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ptU-Cg-TfR"/>
+                <constraint firstItem="iuC-Y1-Gca" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="67" id="qe0-xD-LUX"/>
                 <constraint firstItem="SCQ-TS-EeM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xhA-fw-QSV"/>
             </constraints>
             <point key="canvasLocation" x="34.782608695652179" y="84.375"/>
