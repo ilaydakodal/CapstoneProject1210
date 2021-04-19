@@ -338,6 +338,9 @@
                                         <state key="normal" title="Add Symptoms">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addSymptomsButtonPressed:" destination="bvz-Qh-JSm" eventType="touchUpInside" id="xyv-Ex-I30"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBv-I2-MzX">
                                         <rect key="frame" x="0.0" y="160" width="130" height="130"/>
@@ -349,6 +352,9 @@
                                         <state key="normal" title="log">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logButtonPressed:" destination="bvz-Qh-JSm" eventType="touchUpInside" id="FIw-0F-aav"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mN-ur-jd4">
                                         <rect key="frame" x="0.0" y="320" width="130" height="130"/>
@@ -360,6 +366,9 @@
                                         <state key="normal" title="User List">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="userListButtonPressed:" destination="bvz-Qh-JSm" eventType="touchUpInside" id="5Rv-dB-svb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

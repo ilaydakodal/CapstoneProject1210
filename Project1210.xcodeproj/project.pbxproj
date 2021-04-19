@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1077223689A1FB94EA355BD6 /* Pods_Project1210.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DDE2E6D40CB889AFFD10E5 /* Pods_Project1210.framework */; };
 		882667A4261A02C400657C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667A3261A02C400657C23 /* AppDelegate.swift */; };
 		882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667A5261A02C400657C23 /* SceneDelegate.swift */; };
 		882667A8261A02C400657C23 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667A7261A02C400657C23 /* MainPageViewController.swift */; };
@@ -32,9 +33,15 @@
 		88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */; };
 		88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E85262C604500A6CD6A /* UserListTableViewController.swift */; };
 		88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43E86262C604500A6CD6A /* UserListTableViewController.xib */; };
+<<<<<<< Updated upstream
 		88D43E8D262C75B600A6CD6A /* SymptomQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */; };
 		88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */; };
 		88D43E9B262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */; };
+=======
+		C7B26C78262C8DB800C6743C /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B26C76262C8DB800C6743C /* UserListTableViewCell.swift */; };
+		C7B26C79262C8DB800C6743C /* UserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B26C77262C8DB800C6743C /* UserListTableViewCell.xib */; };
+		C7C29399262C85CB006B27CF /* UserListTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C29398262C85CB006B27CF /* UserListTableController.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3C78191A3A272D3912FB5B /* Pods-Project1210.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project1210.debug.xcconfig"; path = "Target Support Files/Pods-Project1210/Pods-Project1210.debug.xcconfig"; sourceTree = "<group>"; };
+		21CCE039301AF8BBF916DEF9 /* Pods-Project1210.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project1210.release.xcconfig"; path = "Target Support Files/Pods-Project1210/Pods-Project1210.release.xcconfig"; sourceTree = "<group>"; };
 		882667A0261A02C400657C23 /* Project1210.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1210.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882667A3261A02C400657C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882667A5261A02C400657C23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,9 +94,16 @@
 		88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
 		88D43E85262C604500A6CD6A /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
 		88D43E86262C604500A6CD6A /* UserListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewController.xib; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomQuestionModel.swift; sourceTree = "<group>"; };
 		88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Algorithm+Swift.swift"; sourceTree = "<group>"; };
 		88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CoronaPredictModelFinal.mlmodel; path = ../../../../../Downloads/CoronaPredictModelFinal.mlmodel; sourceTree = "<group>"; };
+=======
+		C2DDE2E6D40CB889AFFD10E5 /* Pods_Project1210.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project1210.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B26C76262C8DB800C6743C /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		C7B26C77262C8DB800C6743C /* UserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewCell.xib; sourceTree = "<group>"; };
+		C7C29398262C85CB006B27CF /* UserListTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableController.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D43E16262B122B00A6CD6A /* SQLite in Frameworks */,
+				1077223689A1FB94EA355BD6 /* Pods_Project1210.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FE4F2A8E9906A07851CC756 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2DDE2E6D40CB889AFFD10E5 /* Pods_Project1210.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		88266797261A02C400657C23 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +148,8 @@
 				882667BC261A02C500657C23 /* Project1210Tests */,
 				882667C7261A02C500657C23 /* Project1210UITests */,
 				882667A1261A02C400657C23 /* Products */,
+				CAEBAB5D986E5D3DD0A8F89F /* Pods */,
+				6FE4F2A8E9906A07851CC756 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,6 +266,7 @@
 				882667F1261A045300657C23 /* MapViewController.swift */,
 				882667EC261A043300657C23 /* SignUpViewController.swift */,
 				88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */,
+				C7C29398262C85CB006B27CF /* UserListTableController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -252,6 +280,8 @@
 				8826681F261CEC7300657C23 /* SymptomTestViewController.xib */,
 				88D43E85262C604500A6CD6A /* UserListTableViewController.swift */,
 				88D43E86262C604500A6CD6A /* UserListTableViewController.xib */,
+				C7B26C76262C8DB800C6743C /* UserListTableViewCell.swift */,
+				C7B26C77262C8DB800C6743C /* UserListTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,12 +305,22 @@
 			path = Formatter;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
 		88D43E94262D65E900A6CD6A /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
 				88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */,
 			);
 			path = Algorithm;
+=======
+		CAEBAB5D986E5D3DD0A8F89F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C78191A3A272D3912FB5B /* Pods-Project1210.debug.xcconfig */,
+				21CCE039301AF8BBF916DEF9 /* Pods-Project1210.release.xcconfig */,
+			);
+			path = Pods;
+>>>>>>> Stashed changes
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,9 +330,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 882667CD261A02C500657C23 /* Build configuration list for PBXNativeTarget "Project1210" */;
 			buildPhases = (
+				477C1E6C68524EF55D01E8BE /* [CP] Check Pods Manifest.lock */,
 				8826679C261A02C400657C23 /* Sources */,
 				8826679D261A02C400657C23 /* Frameworks */,
 				8826679E261A02C400657C23 /* Resources */,
+				B9E0D38590963AD6DCE92885 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -393,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				882667B3261A02C400657C23 /* LaunchScreen.storyboard in Resources */,
+				C7B26C79262C8DB800C6743C /* UserListTableViewCell.xib in Resources */,
 				88266808261C730C00657C23 /* UserProfileViewController.xib in Resources */,
 				88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */,
 				882667B0261A02C400657C23 /* Assets.xcassets in Resources */,
@@ -417,6 +460,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		477C1E6C68524EF55D01E8BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project1210-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E0D38590963AD6DCE92885 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project1210/Pods-Project1210-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project1210/Pods-Project1210-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Project1210/Pods-Project1210-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8826679C261A02C400657C23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -426,7 +511,11 @@
 				882667ED261A043300657C23 /* SignUpViewController.swift in Sources */,
 				88D43E9B262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */,
 				88D43E24262B13B800A6CD6A /* DataBaseModel.swift in Sources */,
+<<<<<<< Updated upstream
 				88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */,
+=======
+				C7C29399262C85CB006B27CF /* UserListTableController.swift in Sources */,
+>>>>>>> Stashed changes
 				882667A8261A02C400657C23 /* MainPageViewController.swift in Sources */,
 				88266820261CEC7300657C23 /* SymptomTestViewController.swift in Sources */,
 				88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */,
@@ -434,6 +523,7 @@
 				882667A4261A02C400657C23 /* AppDelegate.swift in Sources */,
 				882667F7261A11A300657C23 /* LoginViewController.swift in Sources */,
 				882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */,
+				C7B26C78262C8DB800C6743C /* UserListTableViewCell.swift in Sources */,
 				88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */,
 				88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */,
 				882667AE261A02C400657C23 /* Project1210.xcdatamodeld in Sources */,
@@ -613,6 +703,7 @@
 		};
 		882667CE261A02C500657C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3C78191A3A272D3912FB5B /* Pods-Project1210.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -631,6 +722,7 @@
 		};
 		882667CF261A02C500657C23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21CCE039301AF8BBF916DEF9 /* Pods-Project1210.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

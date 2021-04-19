@@ -60,4 +60,12 @@ class DataBaseModel {
             print(error)
         }
     }
+<<<<<<< Updated upstream
+=======
+    func registerUser() {
+        print("SignUp button tapped")
+
+    }
+    
+>>>>>>> Stashed changes
 }
