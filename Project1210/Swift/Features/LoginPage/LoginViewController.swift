@@ -9,10 +9,12 @@ import UIKit
 import SQLite
 
 class LoginViewController: UIViewController {
-
+    
+    let database = DataBaseCommands()
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.applyDefaultStyling(color: .black)
@@ -31,7 +33,11 @@ class LoginViewController: UIViewController {
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "adminView", sender: nil)
             }
-            
+        } else if (database.getUserwithUsername(userNameValue: "") != nil){
+            //database.getUserwithUsername(userNameValue: "")
+            DispatchQueue.main.async {
+                // self.performSegue(withIdentifier: "loginToMap", sender: nil)
+            }
         } else {
             let alert = UIAlertController(title: "Oops!", message: "Wrong username or password", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

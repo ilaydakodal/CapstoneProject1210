@@ -19,7 +19,7 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       LocationManager.shared.getUserLocation { [weak self] location in
+        LocationManager.shared.getUserLocation { [weak self] location in
             DispatchQueue.main.async {
                 guard let strongSelf = self else {
                     return
@@ -27,7 +27,6 @@ class MapViewController: UIViewController {
                 strongSelf.addMapPin(with: location)
             }
         }
-        
     }
     
     @IBAction func MyPageButtonPressed(_ sender: Any) {
@@ -36,8 +35,8 @@ class MapViewController: UIViewController {
     }
     
     @IBAction func PinButtonPressed(_ sender: Any) {
-       relocate()
-    
+        relocate()
+        
         print("location")
     }
     
@@ -52,9 +51,8 @@ class MapViewController: UIViewController {
                                              span: MKCoordinateSpan(latitudeDelta: 0.05,
                                                                     longitudeDelta: 0.05)),
                           animated: true)
-       
-        //mapView.addAnnotation(pin)
     }
+    
     func relocate() {
         mapView.setVisibleMapRect(
             mapView.annotations.reduce(MKMapRect.null) { result, next in
@@ -66,6 +64,5 @@ class MapViewController: UIViewController {
             edgePadding: UIEdgeInsets(top: 20, left: 20, bottom: 40, right: 20),
             animated: true
         )
-        //manager.manager.startUpdatingLocation()
     }
 }

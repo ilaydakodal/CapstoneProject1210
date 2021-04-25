@@ -481,7 +481,7 @@
                                     <constraint firstAttribute="height" constant="34" id="LWz-Ce-M6n"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="family-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD/MM/YYYY" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CbN-lw-Eg7">
                                 <rect key="frame" x="92" y="426.5" width="230" height="34"/>
@@ -490,7 +490,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="pec-AL-G1L"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="JonDoe0345" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SZJ-gC-C0p">
                                 <rect key="frame" x="92" y="568" width="230" height="34"/>
@@ -499,7 +499,7 @@
                                     <constraint firstAttribute="height" constant="34" id="hAx-8A-rnc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="*********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eso-wG-rPP">
                                 <rect key="frame" x="92" y="639" width="230" height="34"/>
@@ -508,7 +508,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="uPB-ge-XYG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="*********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ql-cK-xFs">
                                 <rect key="frame" x="92" y="710" width="230" height="34"/>
@@ -517,7 +517,7 @@
                                     <constraint firstAttribute="height" constant="34" id="c3O-Yv-55z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hc6-7J-4Yk">
                                 <rect key="frame" x="92" y="497.5" width="230" height="35"/>
@@ -540,7 +540,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="MTo-0U-r2O"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzQ-1t-fKg">
                                 <rect key="frame" x="117" y="756" width="180" height="50"/>
@@ -553,7 +553,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="signUpButtonPressed:" destination="az9-D7-4eC" eventType="touchUpInside" id="sWJ-PV-o44"/>
+                                    <action selector="signUpPressed:" destination="az9-D7-4eC" eventType="touchUpInside" id="Wd0-P5-qWQ"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" verticalCompressionResistancePriority="754" translatesAutoresizingMaskIntoConstraints="NO" id="hnb-1Z-NHp">
@@ -566,7 +566,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="e2b-qa-4tR">
                                             <color key="tintColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="JfM-Yx-b9O"/>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="SignUpToMain" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="JfM-Yx-b9O"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -645,7 +645,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="95T-ct-jNm"/>
+        <segue reference="JfM-Yx-b9O"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="MainPageImage" width="7730" height="7730"/>

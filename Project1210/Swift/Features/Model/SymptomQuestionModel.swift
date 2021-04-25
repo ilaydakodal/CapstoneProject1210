@@ -12,4 +12,3 @@ struct Question {
     var answerA: String!
     var answerB: String!
 }
-

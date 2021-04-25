@@ -23,7 +23,7 @@ class SymptomTestViewController: UIViewController {
     func askQuestions() {
         questions = [Question(question: "How are you feeling today?",
                               answerA: "Great!",
-                              answerB: "Not that geat"),
+                              answerB: "Not that well"),
                      Question(question: "Are you experiencing headaches?",
                               answerA: "Yes",
                               answerB: "No"),
@@ -100,7 +100,9 @@ class SymptomTestViewController: UIViewController {
         
         if sender.tag == selectedAnswer {
             updateQuestions()
-            updateUI()
+            if questionNumber > 1 {
+                updateUI()
+            }
         }
         
         if  answerButtonA.isTouchInside && questionNumber == 2 {

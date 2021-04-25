@@ -25,8 +25,6 @@
 		88266820261CEC7300657C23 /* SymptomTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826681E261CEC7300657C23 /* SymptomTestViewController.swift */; };
 		88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8826681F261CEC7300657C23 /* SymptomTestViewController.xib */; };
 		88D43E16262B122B00A6CD6A /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 88D43E15262B122B00A6CD6A /* SQLite */; };
-		88D43E24262B13B800A6CD6A /* DataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E23262B13B800A6CD6A /* DataBaseModel.swift */; };
-		88D43E2C262B16AB00A6CD6A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E2B262B16AB00A6CD6A /* UserModel.swift */; };
 		88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E40262C1E2700A6CD6A /* DateFormatter.swift */; };
 		88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */; };
 		88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */; };
@@ -34,10 +32,20 @@
 		88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43E86262C604500A6CD6A /* UserListTableViewController.xib */; };
 		88D43E8D262C75B600A6CD6A /* SymptomQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */; };
 		88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */; };
-		88D43E9B262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */; };
 		88D43ECA262DB2A900A6CD6A /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43EC8262DB2A800A6CD6A /* LogViewController.swift */; };
 		88D43ECB262DB2A900A6CD6A /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43EC9262DB2A800A6CD6A /* LogViewController.xib */; };
 		88D43EE8262E143A00A6CD6A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43EE7262E143A00A6CD6A /* LocationManager.swift */; };
+		88D43FA92635D5D400A6CD6A /* UITableView+NibRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FA82635D5D400A6CD6A /* UITableView+NibRegistering.swift */; };
+		88D43FAE2635D60E00A6CD6A /* UIView+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FAD2635D60E00A6CD6A /* UIView+Alert.swift */; };
+		88D43FB72635D6CA00A6CD6A /* UserInfoPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FB62635D6CA00A6CD6A /* UserInfoPresentation.swift */; };
+		88D43FC12635D71900A6CD6A /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FC02635D71900A6CD6A /* UserListViewModel.swift */; };
+		88D43FCA2635D75F00A6CD6A /* DataBaseCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FC92635D75F00A6CD6A /* DataBaseCommands.swift */; };
+		88D43FD22635D78000A6CD6A /* DataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FD12635D78000A6CD6A /* DataBaseModel.swift */; };
+		88D43FD72635D7A500A6CD6A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FD62635D7A500A6CD6A /* UserModel.swift */; };
+		88D43FE12635D88D00A6CD6A /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FDF2635D88D00A6CD6A /* UserTableViewCell.swift */; };
+		88D43FE22635D88D00A6CD6A /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43FE02635D88D00A6CD6A /* UserTableViewCell.xib */; };
+		88D43FEC2635DB4B00A6CD6A /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FEB2635DB4B00A6CD6A /* SignUpViewModel.swift */; };
+		88D440352635E37000A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D440342635E37000A6CD6A /* CoronaPredictModelFinal.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,8 +89,6 @@
 		88266806261C730C00657C23 /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
 		8826681E261CEC7300657C23 /* SymptomTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomTestViewController.swift; sourceTree = "<group>"; };
 		8826681F261CEC7300657C23 /* SymptomTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomTestViewController.xib; sourceTree = "<group>"; };
-		88D43E23262B13B800A6CD6A /* DataBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseModel.swift; sourceTree = "<group>"; };
-		88D43E2B262B16AB00A6CD6A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		88D43E40262C1E2700A6CD6A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexFormatter.swift; sourceTree = "<group>"; };
 		88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
@@ -90,10 +96,20 @@
 		88D43E86262C604500A6CD6A /* UserListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewController.xib; sourceTree = "<group>"; };
 		88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomQuestionModel.swift; sourceTree = "<group>"; };
 		88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Algorithm+Swift.swift"; sourceTree = "<group>"; };
-		88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CoronaPredictModelFinal.mlmodel; path = ../../../../../Downloads/CoronaPredictModelFinal.mlmodel; sourceTree = "<group>"; };
 		88D43EC8262DB2A800A6CD6A /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		88D43EC9262DB2A800A6CD6A /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
 		88D43EE7262E143A00A6CD6A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		88D43FA82635D5D400A6CD6A /* UITableView+NibRegistering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+NibRegistering.swift"; sourceTree = "<group>"; };
+		88D43FAD2635D60E00A6CD6A /* UIView+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Alert.swift"; sourceTree = "<group>"; };
+		88D43FB62635D6CA00A6CD6A /* UserInfoPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoPresentation.swift; sourceTree = "<group>"; };
+		88D43FC02635D71900A6CD6A /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		88D43FC92635D75F00A6CD6A /* DataBaseCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseCommands.swift; sourceTree = "<group>"; };
+		88D43FD12635D78000A6CD6A /* DataBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseModel.swift; sourceTree = "<group>"; };
+		88D43FD62635D7A500A6CD6A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		88D43FDF2635D88D00A6CD6A /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		88D43FE02635D88D00A6CD6A /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		88D43FEB2635DB4B00A6CD6A /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		88D440342635E37000A6CD6A /* CoronaPredictModelFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CoronaPredictModelFinal.mlmodel; path = ../../../../CoronaPredictModelFinal.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +165,7 @@
 				882667A9261A02C400657C23 /* Main.storyboard */,
 				882667B1261A02C400657C23 /* LaunchScreen.storyboard */,
 				882667B4261A02C400657C23 /* Info.plist */,
-				88D43E9A262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel */,
+				88D440342635E37000A6CD6A /* CoronaPredictModelFinal.mlmodel */,
 			);
 			path = Project1210;
 			sourceTree = "<group>";
@@ -206,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				882667E4261A03FD00657C23 /* UIButton+Styling.swift */,
+				88D43FA82635D5D400A6CD6A /* UITableView+NibRegistering.swift */,
+				88D43FAD2635D60E00A6CD6A /* UIView+Alert.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -224,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				88D43EB8262DA50100A6CD6A /* Admin */,
+				88D43FC82635D73100A6CD6A /* Data */,
 				88D43EB0262DA40900A6CD6A /* LoginPage */,
 				882667E2261A03C100657C23 /* MainPage */,
 				88D43EB4262DA44F00A6CD6A /* MapView */,
@@ -251,23 +270,10 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		88266804261C72E000657C23 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				88D43EC7262DB26900A6CD6A /* LogView */,
-				88D43EC6262DB26200A6CD6A /* TableView */,
-				88D43E85262C604500A6CD6A /* UserListTableViewController.swift */,
-				88D43E86262C604500A6CD6A /* UserListTableViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		88D43E22262B137E00A6CD6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				88D43E23262B13B800A6CD6A /* DataBaseModel.swift */,
 				88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */,
-				88D43E2B262B16AB00A6CD6A /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 		88D43EB7262DA4E600A6CD6A /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				88D43FEA2635DB3900A6CD6A /* Model */,
 				882667EC261A043300657C23 /* SignUpViewController.swift */,
 			);
 			path = SignUp;
@@ -334,8 +341,9 @@
 		88D43EB8262DA50100A6CD6A /* Admin */ = {
 			isa = PBXGroup;
 			children = (
-				88266804261C72E000657C23 /* View */,
-				88D43EB9262DA53700A6CD6A /* ViewController */,
+				88D43FDE2635D7FF00A6CD6A /* AdminMain */,
+				88D43EC7262DB26900A6CD6A /* LogView */,
+				88D43EC6262DB26200A6CD6A /* TableView */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -351,6 +359,10 @@
 		88D43EC6262DB26200A6CD6A /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				88D43FBF2635D6F400A6CD6A /* Model */,
+				88D43FB22635D68600A6CD6A /* Presentation */,
+				88D43FE62635D89500A6CD6A /* View */,
+				88D43FBE2635D6E500A6CD6A /* ViewController */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -370,6 +382,66 @@
 				88D43EE7262E143A00A6CD6A /* LocationManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		88D43FB22635D68600A6CD6A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				88D43FB62635D6CA00A6CD6A /* UserInfoPresentation.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		88D43FBE2635D6E500A6CD6A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				88D43E85262C604500A6CD6A /* UserListTableViewController.swift */,
+				88D43E86262C604500A6CD6A /* UserListTableViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		88D43FBF2635D6F400A6CD6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88D43FC02635D71900A6CD6A /* UserListViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88D43FC82635D73100A6CD6A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				88D43FC92635D75F00A6CD6A /* DataBaseCommands.swift */,
+				88D43FD12635D78000A6CD6A /* DataBaseModel.swift */,
+				88D43FD62635D7A500A6CD6A /* UserModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		88D43FDE2635D7FF00A6CD6A /* AdminMain */ = {
+			isa = PBXGroup;
+			children = (
+				88D43EB9262DA53700A6CD6A /* ViewController */,
+			);
+			path = AdminMain;
+			sourceTree = "<group>";
+		};
+		88D43FE62635D89500A6CD6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88D43FDF2635D88D00A6CD6A /* UserTableViewCell.swift */,
+				88D43FE02635D88D00A6CD6A /* UserTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88D43FEA2635DB3900A6CD6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88D43FEB2635DB4B00A6CD6A /* SignUpViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,6 +553,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D43FE22635D88D00A6CD6A /* UserTableViewCell.xib in Resources */,
 				882667B3261A02C400657C23 /* LaunchScreen.storyboard in Resources */,
 				88266808261C730C00657C23 /* UserProfileViewController.xib in Resources */,
 				88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */,
@@ -514,12 +587,13 @@
 			files = (
 				88D43E8D262C75B600A6CD6A /* SymptomQuestionModel.swift in Sources */,
 				882667ED261A043300657C23 /* SignUpViewController.swift in Sources */,
-				88D43E9B262D66FD00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */,
-				88D43E24262B13B800A6CD6A /* DataBaseModel.swift in Sources */,
+				88D43FA92635D5D400A6CD6A /* UITableView+NibRegistering.swift in Sources */,
+				88D43FCA2635D75F00A6CD6A /* DataBaseCommands.swift in Sources */,
 				88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */,
 				882667A8261A02C400657C23 /* MainPageViewController.swift in Sources */,
 				88266820261CEC7300657C23 /* SymptomTestViewController.swift in Sources */,
 				88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */,
+				88D43FC12635D71900A6CD6A /* UserListViewModel.swift in Sources */,
 				882667E5261A03FD00657C23 /* UIButton+Styling.swift in Sources */,
 				882667A4261A02C400657C23 /* AppDelegate.swift in Sources */,
 				882667F7261A11A300657C23 /* LoginViewController.swift in Sources */,
@@ -529,9 +603,15 @@
 				88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */,
 				882667AE261A02C400657C23 /* Project1210.xcdatamodeld in Sources */,
 				88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */,
+				88D43FE12635D88D00A6CD6A /* UserTableViewCell.swift in Sources */,
 				88D43EE8262E143A00A6CD6A /* LocationManager.swift in Sources */,
+				88D43FEC2635DB4B00A6CD6A /* SignUpViewModel.swift in Sources */,
+				88D43FAE2635D60E00A6CD6A /* UIView+Alert.swift in Sources */,
+				88D43FD72635D7A500A6CD6A /* UserModel.swift in Sources */,
+				88D440352635E37000A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */,
+				88D43FB72635D6CA00A6CD6A /* UserInfoPresentation.swift in Sources */,
 				88266807261C730C00657C23 /* UserProfileViewController.swift in Sources */,
-				88D43E2C262B16AB00A6CD6A /* UserModel.swift in Sources */,
+				88D43FD22635D78000A6CD6A /* DataBaseModel.swift in Sources */,
 				882667F2261A045300657C23 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

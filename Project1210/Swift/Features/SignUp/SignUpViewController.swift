@@ -10,7 +10,8 @@ import SQLite
 
 class SignUpViewController: UIViewController {
     
-    let dataBaseModel = DataBaseModel()
+    let presentation = UserListTableViewController()
+    var viewModel: SignUpViewModel!
     
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
@@ -24,43 +25,59 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         signUpButton.applyDefaultStyling(color: .black)
-        dataBaseModel.createTable()
-        dataBaseModel.connection()
-    }
-    
-    @IBAction func genderSelected(_ sender: Any) {
-
-            switch genderSegmentControl.selectedSegmentIndex{
-            case 0: print("female")
-            case 1: print("male")
-            default: print("female")
-            }
-        }
-    
-    @IBAction func signUpButtonPressed(_ sender: Any) {
-        registerUser()
-    }
-    
-    func registerUser() {
-        guard let name = nameTextField.text,
-              let surname = surnameTextField.text,
-              let dateOfBirth = dateOfBirthTextField.text?.dateFromISO8601,
-              let gender = genderSegmentControl.selectedSegmentIndex.toBool(),
-              let username = usernameTextField.text,
-              let password = passwordTextField.text
-        else { return }
+        createTable()
         
-        let registerUser = dataBaseModel.user.insert(dataBaseModel.name <- name,
-                                                     dataBaseModel.surname <- surname,
-                                                     dataBaseModel.dateOfBirth <- dateOfBirth,
-                                                     dataBaseModel.gender <- gender,
-                                                     dataBaseModel.userName <- username,
-                                                     dataBaseModel.userPassword <- password)
-        do {
-            try self.dataBaseModel.db.run(registerUser)
-            print("userRegistered")
-        }catch{
-            print(error)
+    }
+    
+    @IBAction func genderSelected(_ sender: UISegmentedControl) {
+        sender.setTitle("Female", forSegmentAt: 0)
+        sender.setTitle("Male", forSegmentAt: 1)
+        
+        switch sender.selectedSegmentIndex {
+        case 0: sender.isSelected = true
+        case 1: sender.isSelected = true
+        default: sender.isSelected = true
         }
+    }
+    
+    // MARK: - Save new contact or update an existing contact
+    @IBAction func signUpPressed(_ sender: UIButton) {
+        
+    
+        let id: Int = viewModel == nil ? 0 : viewModel.id!
+        let userName = usernameTextField.text ?? ""
+        let name = nameTextField.text ?? ""
+        let surname = surnameTextField.text ?? ""
+        let gender = true
+        let dateOfBirth = "".dateFromISO8601
+        let userPassword = passwordTextField.text ?? ""
+        
+        let userValues = User(id: id, userName: userName, name: name, surname: surname, gender: gender, dateOfBirth: dateOfBirth!, userPassword: userPassword)
+            // User(id: id, userName: userName, name: name, surname: surname, gender: gender, dateOfBirth: String(dateOfBirth), userPassword: userPassword)
+        
+            createNewUser(userValues)
+        print(DataBaseCommands.presentRows()!)
+        
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "SignUpToMain", sender: nil)
+        }
+}
+
+// MARK: - Create new user
+private func createNewUser(_ userValues: User) {
+    
+    let userAddedToTable = DataBaseCommands.insertRow(userValues)
+    
+    if userAddedToTable == true {
+        dismiss(animated: true, completion: nil)
+    } else {
+        showError("Error", message: "This user already exist.")
+    }
+}
+    
+    // MARK: - Connect to database and create table.
+    private func createTable() {
+        let database = DataBaseModel.sharedInstance
+        database.createTable()
     }
 }

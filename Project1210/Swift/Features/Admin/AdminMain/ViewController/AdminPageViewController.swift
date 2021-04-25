@@ -19,19 +19,19 @@ class AdminPageViewController: UIViewController {
         logButton!.applyDefaultStyling(color: .black)
         userListButton!.applyDefaultStyling(color: .black)
     }
+    
     @IBAction func addSymptomsButtonPressed(_ sender: UIButton) {
     }
+    
     @IBAction func logButtonPressed(_ sender: UIButton) {
     }
+    
     let userTable = UserListTableViewController()
     
     @IBAction func userListButtonPressed(_ sender: UIButton) {
         DispatchQueue.main.async {
             self.userTable.modalPresentationStyle = .fullScreen
             self.present(self.userTable, animated: true, completion: nil)
-           
         }
-        
     }
-    
 }
