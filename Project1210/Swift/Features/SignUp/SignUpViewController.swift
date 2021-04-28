@@ -12,6 +12,7 @@ class SignUpViewController: UIViewController {
     
     let presentation = UserListTableViewController()
     var viewModel: SignUpViewModel!
+    var userArray: Array<Any> = []
     
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
@@ -42,8 +43,6 @@ class SignUpViewController: UIViewController {
     
     // MARK: - Save new contact or update an existing contact
     @IBAction func signUpPressed(_ sender: UIButton) {
-        
-    
         let id: Int = viewModel == nil ? 0 : viewModel.id!
         let userName = usernameTextField.text ?? ""
         let name = nameTextField.text ?? ""
@@ -51,32 +50,50 @@ class SignUpViewController: UIViewController {
         let gender = true
         let dateOfBirth = "".dateFromISO8601
         let userPassword = passwordTextField.text ?? ""
-        
-        let userValues = User(id: id, userName: userName, name: name, surname: surname, gender: gender, dateOfBirth: dateOfBirth!, userPassword: userPassword)
-            // User(id: id, userName: userName, name: name, surname: surname, gender: gender, dateOfBirth: String(dateOfBirth), userPassword: userPassword)
-        
-            createNewUser(userValues)
-        print(DataBaseCommands.presentRows()!)
-        
-        DispatchQueue.main.async {
-            self.performSegue(withIdentifier: "SignUpToMain", sender: nil)
-        }
-}
 
-// MARK: - Create new user
-private func createNewUser(_ userValues: User) {
-    
-    let userAddedToTable = DataBaseCommands.insertRow(userValues)
-    
-    if userAddedToTable == true {
-        dismiss(animated: true, completion: nil)
-    } else {
-        showError("Error", message: "This user already exist.")
+        for u  in userArray {
+            if usernameTextField.text == ((u as! Dictionary<String,AnyObject>)["userName"] as! String) {
+                print("login Success")
+                //do Something
+                let alert = UIAlertController(title: "Error", message: "This User already exists Try logging in.", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alert.addAction(okAction)
+                present(alert, animated: true, completion: nil)
+                
+            }
+        }
+        
+        if passwordTextField.text != passwordValidationTextField.text{
+            let alert = UIAlertController(title: "Error", message: "Password does not match", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+            
+        } else {
+            let userValues = User(id: id, userName: userName, name: name, surname: surname, gender: gender, dateOfBirth: dateOfBirth!, userPassword: userPassword)
+            
+            createNewUser(userValues)
+            print(DataBaseCommands.presentRows()!)
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "signupToMain", sender: nil)
+            }
+        }
     }
-}
+    
+    // MARK: - Create new user
+    private func createNewUser(_ userValues: User) {
+        
+        let userAddedToTable = DataBaseCommands.insertRow(userValues)
+        
+        if userAddedToTable == true {
+            dismiss(animated: true, completion: nil)
+        } else {
+            showError("Error", message: "This user already exist.")
+        }
+    }
     
     // MARK: - Connect to database and create table.
-    private func createTable() {
+    func createTable() {
         let database = DataBaseModel.sharedInstance
         database.createTable()
     }

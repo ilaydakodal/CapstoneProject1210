@@ -8,14 +8,17 @@
 import UIKit
 
 class UserProfileViewController: UIViewController {
-
+    
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var surnameLabel: UILabel!
     @IBOutlet weak var changePasswordButton: UIButton!
+    @IBOutlet weak var dateOfBirthLabel: UILabel!
+    let login = LoginViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         changePasswordButton.applyDefaultStyling(color: .black)
+        //usernameLabel.text = "Name: " + login.returnUsername()
     }
 }

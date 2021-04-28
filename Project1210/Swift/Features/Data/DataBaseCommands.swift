@@ -170,4 +170,3 @@ class DataBaseCommands {
         return user_model
     }
 }
-

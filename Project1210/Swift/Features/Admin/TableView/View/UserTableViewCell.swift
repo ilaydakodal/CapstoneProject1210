@@ -9,8 +9,6 @@ import UIKit
 
 class UserTableViewCell: UITableViewCell {
     
-   // let database = DataBaseModel()
-    
     @IBOutlet private(set) weak var nameSurnameLabel: UILabel!
     @IBOutlet private(set) weak var editLabel: UIButton!
     @IBOutlet private(set) weak var deleteLabel: UIButton!

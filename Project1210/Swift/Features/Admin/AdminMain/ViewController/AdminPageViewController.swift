@@ -34,4 +34,13 @@ class AdminPageViewController: UIViewController {
             self.present(self.userTable, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func exitButtonPressed(_ sender: Any) {
+        DispatchQueue.main.async {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainPage = storyBoard.instantiateViewController(withIdentifier: "mainView") as! MainPageViewController
+            mainPage.modalPresentationStyle = .fullScreen
+            self.present(mainPage, animated: true, completion: nil)
+        }
+    }
 }

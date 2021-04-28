@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserProfileViewController" customModule="Project1210" customModuleProvider="target">
             <connections>
                 <outlet property="changePasswordButton" destination="pMB-U9-Cvi" id="aCN-Yc-GFC"/>
+                <outlet property="dateOfBirthLabel" destination="cvD-0i-Pn7" id="n5Z-al-gCR"/>
                 <outlet property="nameLabel" destination="AfF-42-6NZ" id="bb1-uK-2bO"/>
                 <outlet property="surnameLabel" destination="TmS-2i-FWn" id="EKT-Mi-yhC"/>
                 <outlet property="usernameLabel" destination="TY8-nm-7MO" id="Znf-8a-xgN"/>
@@ -38,7 +39,7 @@
                             <color key="textColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Name:       Ilayda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfF-42-6NZ">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfF-42-6NZ">
                             <rect key="frame" x="77" y="399" width="260" height="30"/>
                             <color key="backgroundColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
