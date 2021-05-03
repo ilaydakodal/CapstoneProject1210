@@ -9,20 +9,25 @@ import UIKit
 
 class UserListTableViewController: UITableViewController  {
     
-    private var smallPresentation: [UserInfoPresentation] = []
+     private var smallPresentation: [UserInfoPresentation] = []
     private lazy var cellView = UserTableViewCell()
-    var viewModel: UserListViewModel!
+    //var viewModel: UserListViewModel!
+    
+    private var viewModel = UserListViewModel()
     
     @IBOutlet var userTableView: UITableView!
     
     //let database = DataBaseModel()
     
     override func viewDidLoad() {
-        self.viewDidLoad()
+        super.viewDidLoad()
         title = "User List"
-        userTableView.delegate = self
-        userTableView.dataSource = self
-        bindViewModel()
+        //userTableView.delegate = self
+        //userTableView.dataSource = self
+        viewModel.connectToDatabase()
+        //userTableView?.registerNibCell(UserTableViewCell.self)
+        tableView.registerNibCell(UserTableViewCell.self)
+        //bindViewModel()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,23 +35,24 @@ class UserListTableViewController: UITableViewController  {
         loadData()
         tableView.reloadData()
     }
+    
     private func loadData() {
         viewModel.loadDataFromSQLiteDatabase()
     }
     
     func configurView(name: String, userSurname: String) {
-        tableView.registerNibCell(UserTableViewCell.self)
-        smallPresentation.append(UserInfoPresentation(id: "", userName: "", name: "", surname: "", gender: "", dateOfBirth: ""))
+       
+        //User.append(UserInfoPresentation(id: "", userName: "", name: "", surname: "", gender: "", dateOfBirth: ""))
     }
     
-    func bindViewModel(){
+    /*func bindViewModel(){
         viewModel = UserListViewModel()
         viewModel.changeHandler = { [weak self] change in
             self!.applyChange(change)
         }
     }
     
-    func applyChange(_ change: UserListViewModel.Change) {
+     func applyChange(_ change: UserListViewModel.Change) {
         switch change {
         case .presentation(let presentation):
             self.smallPresentation = presentation.smallInfoPresentation
@@ -56,25 +62,37 @@ class UserListTableViewController: UITableViewController  {
             break
         }
     }
+}*/
 }
 
 // MARK: - Table view data source
 extension UserListTableViewController {
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+    //override func numberOfSections(in tableView: UITableView) -> Int {
+        //return 1
+    //}
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numberOfRowsInSection(section: section)
-        //smallPresentation.count
-        //return database.getUserList().count
+        viewModel.numberOfRowsInSection(section: section)
     }
+    
+   /* override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return UserListViewModel.cellForRowAt(userArray[])
+            //smallPresentation.count
+            //viewModel.numberOfRowsInSection(section: section)
+        
+        //return database.getUserList().count
+    }*/
     
     // Configure the cell...
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeCell(indexPath, type: UserTableViewCell.self)
-        cell.fill(smallPresentation[indexPath.row])
+        
+        let object = viewModel.cellForRowAt(indexPath: indexPath)
+        
+        if let userCell = cell as? UserTableViewCell {
+            userCell.fill(object)
+        }
         return cell
     }
     

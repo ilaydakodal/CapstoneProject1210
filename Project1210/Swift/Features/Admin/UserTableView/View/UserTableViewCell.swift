@@ -9,13 +9,14 @@ import UIKit
 
 class UserTableViewCell: UITableViewCell {
     
+    @IBOutlet private(set) weak var userNameLabel: UILabel!
     @IBOutlet private(set) weak var nameSurnameLabel: UILabel!
     @IBOutlet private(set) weak var editLabel: UIButton!
-    @IBOutlet private(set) weak var deleteLabel: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -23,7 +24,9 @@ class UserTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func fill(_ presentation: UserInfoPresentation) {
+    func fill(_ presentation: User) {
+        
+        userNameLabel.text = "\(presentation.userName)"
         //let users = database.user
         nameSurnameLabel.text = "\(presentation.name)" + " " + "\(presentation.surname)"
     }

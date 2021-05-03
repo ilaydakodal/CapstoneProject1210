@@ -24,6 +24,8 @@
 		88266808261C730C00657C23 /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88266806261C730C00657C23 /* UserProfileViewController.xib */; };
 		88266820261CEC7300657C23 /* SymptomTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826681E261CEC7300657C23 /* SymptomTestViewController.swift */; };
 		88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8826681F261CEC7300657C23 /* SymptomTestViewController.xib */; };
+		885583E1264020FB002CAF41 /* AdminSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885583DF264020FB002CAF41 /* AdminSymptomViewController.swift */; };
+		885583E2264020FB002CAF41 /* AdminSymptomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885583E0264020FB002CAF41 /* AdminSymptomViewController.xib */; };
 		88D43E16262B122B00A6CD6A /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 88D43E15262B122B00A6CD6A /* SQLite */; };
 		88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E40262C1E2700A6CD6A /* DateFormatter.swift */; };
 		88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */; };
@@ -89,6 +91,8 @@
 		88266806261C730C00657C23 /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
 		8826681E261CEC7300657C23 /* SymptomTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomTestViewController.swift; sourceTree = "<group>"; };
 		8826681F261CEC7300657C23 /* SymptomTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomTestViewController.xib; sourceTree = "<group>"; };
+		885583DF264020FB002CAF41 /* AdminSymptomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSymptomViewController.swift; sourceTree = "<group>"; };
+		885583E0264020FB002CAF41 /* AdminSymptomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminSymptomViewController.xib; sourceTree = "<group>"; };
 		88D43E40262C1E2700A6CD6A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexFormatter.swift; sourceTree = "<group>"; };
 		88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +274,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		885583DE264020BD002CAF41 /* AdminSymptoms */ = {
+			isa = PBXGroup;
+			children = (
+				885583DF264020FB002CAF41 /* AdminSymptomViewController.swift */,
+				885583E0264020FB002CAF41 /* AdminSymptomViewController.xib */,
+			);
+			path = AdminSymptoms;
+			sourceTree = "<group>";
+		};
 		88D43E22262B137E00A6CD6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,9 +354,10 @@
 		88D43EB8262DA50100A6CD6A /* Admin */ = {
 			isa = PBXGroup;
 			children = (
+				885583DE264020BD002CAF41 /* AdminSymptoms */,
 				88D43FDE2635D7FF00A6CD6A /* AdminMain */,
 				88D43EC7262DB26900A6CD6A /* LogView */,
-				88D43EC6262DB26200A6CD6A /* TableView */,
+				88D43EC6262DB26200A6CD6A /* UserTableView */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -356,15 +370,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		88D43EC6262DB26200A6CD6A /* TableView */ = {
+		88D43EC6262DB26200A6CD6A /* UserTableView */ = {
 			isa = PBXGroup;
 			children = (
-				88D43FBF2635D6F400A6CD6A /* Model */,
 				88D43FB22635D68600A6CD6A /* Presentation */,
 				88D43FE62635D89500A6CD6A /* View */,
 				88D43FBE2635D6E500A6CD6A /* ViewController */,
+				88D43FBF2635D6F400A6CD6A /* ViewModel */,
 			);
-			path = TableView;
+			path = UserTableView;
 			sourceTree = "<group>";
 		};
 		88D43EC7262DB26900A6CD6A /* LogView */ = {
@@ -401,12 +415,12 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		88D43FBF2635D6F400A6CD6A /* Model */ = {
+		88D43FBF2635D6F400A6CD6A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				88D43FC02635D71900A6CD6A /* UserListViewModel.swift */,
 			);
-			path = Model;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		88D43FC82635D73100A6CD6A /* Data */ = {
@@ -561,6 +575,7 @@
 				882667B0261A02C400657C23 /* Assets.xcassets in Resources */,
 				88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */,
 				882667AB261A02C400657C23 /* Main.storyboard in Resources */,
+				885583E2264020FB002CAF41 /* AdminSymptomViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +623,7 @@
 				88D43FEC2635DB4B00A6CD6A /* SignUpViewModel.swift in Sources */,
 				88D43FAE2635D60E00A6CD6A /* UIView+Alert.swift in Sources */,
 				88D43FD72635D7A500A6CD6A /* UserModel.swift in Sources */,
+				885583E1264020FB002CAF41 /* AdminSymptomViewController.swift in Sources */,
 				88D44058263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */,
 				88D43FB72635D6CA00A6CD6A /* UserInfoPresentation.swift in Sources */,
 				88266807261C730C00657C23 /* UserProfileViewController.swift in Sources */,

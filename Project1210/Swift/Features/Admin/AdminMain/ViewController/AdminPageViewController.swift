@@ -21,6 +21,10 @@ class AdminPageViewController: UIViewController {
     }
     
     @IBAction func addSymptomsButtonPressed(_ sender: UIButton) {
+        let vc = AdminSymptomViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+        
     }
     
     @IBAction func logButtonPressed(_ sender: UIButton) {
