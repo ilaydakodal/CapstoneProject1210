@@ -31,18 +31,18 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func genderSelected(_ sender: UISegmentedControl) {
-        sender.setTitle("Female", forSegmentAt: 0)
-        sender.setTitle("Male", forSegmentAt: 1)
+        genderSegmentControl = sender
         
         switch sender.selectedSegmentIndex {
-        case 0: sender.isSelected = true
-        case 1: sender.isSelected = true
-        default: sender.isSelected = true
+        case 0: Swift.print(genderSegmentControl.selectedSegmentIndex.toBool() as Any)
+        case 1: Swift.print(genderSegmentControl.selectedSegmentIndex.toBool() as Any)
+        default: Swift.print(genderSegmentControl.selectedSegmentIndex.toBool() as Any)
         }
     }
     
     // MARK: - Save new contact or update an existing contact
     @IBAction func signUpPressed(_ sender: UIButton) {
+        verifyPassword()
         let id: Int = viewModel == nil ? 0 : viewModel.id!
         let userName = usernameTextField.text ?? ""
         let name = nameTextField.text ?? ""
@@ -50,48 +50,48 @@ class SignUpViewController: UIViewController {
         let gender = true
         let dateOfBirth = "".dateFromISO8601
         let userPassword = passwordTextField.text ?? ""
-
-        for u  in userArray {
-            if usernameTextField.text == ((u as! Dictionary<String,AnyObject>)["userName"] as! String) {
-                print("login Success")
-                //do Something
-                let alert = UIAlertController(title: "Error", message: "This User already exists Try logging in.", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alert.addAction(okAction)
-                present(alert, animated: true, completion: nil)
-                
-            }
-        }
         
-        if passwordTextField.text != passwordValidationTextField.text{
-            let alert = UIAlertController(title: "Error", message: "Password does not match", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(okAction)
-            present(alert, animated: true, completion: nil)
-            
-        } else {
-            let userValues = User(id: id, userName: userName, name: name, surname: surname, gender: gender, dateOfBirth: dateOfBirth!, userPassword: userPassword)
-            
-            createNewUser(userValues)
-            print(DataBaseCommands.presentRows()!)
+        for u  in userArray {
+                    if usernameTextField.text == ((u as! Dictionary<String,AnyObject>)["userName"] as! String) {
+                        print("login Success")
+                        //do Something
+                        let alert = UIAlertController(title: "Error", message: "This User already exists Try logging in.", preferredStyle: .alert)
+                        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                        alert.addAction(okAction)
+                        present(alert, animated: true, completion: nil)
+                        
+                    }
+                }
+        
+        let dbc = DataBaseCommands()
+        var existingUser = dbc.getUserwithUsername(userNameValue: userName)
+        
+        if  existingUser?.userName == "" {
+            existingUser?.id = id
+            existingUser?.name = name
+            existingUser?.surname = surname
+            existingUser?.userName = userName
+            existingUser?.gender = gender
+            existingUser?.dateOfBirth = dateOfBirth!
+            existingUser?.userPassword = userPassword
+            DataBaseCommands.insertRow(existingUser!)
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "signupToMain", sender: nil)
             }
-        }
-    }
-    
-    // MARK: - Create new user
-    private func createNewUser(_ userValues: User) {
-        
-        let userAddedToTable = DataBaseCommands.insertRow(userValues)
-        
-        if userAddedToTable == true {
-            dismiss(animated: true, completion: nil)
         } else {
-            showError("Error", message: "This user already exist.")
+            showError("Oops!", message: "This username has already been taken!")
+            Swift.print("Username: \(existingUser!) exists.")
+            
+        }
+        print(DataBaseCommands.presentRows()!)
+    }
+ 
+    func verifyPassword() {
+        if passwordTextField.text != passwordValidationTextField.text{
+            showError("Error", message: "Password does not match")
         }
     }
-    
+
     // MARK: - Connect to database and create table.
     func createTable() {
         let database = DataBaseModel.sharedInstance

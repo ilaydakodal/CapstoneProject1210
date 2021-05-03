@@ -15,7 +15,6 @@ class MapViewController: UIViewController {
     lazy var userProfile = UserProfileViewController()
     lazy var symptomTestView = SymptomTestViewController()
          var manager = LocationManager()
-    var login: LoginViewController!
     
     @IBOutlet weak var myPageButton: UIBarButtonItem!
     @IBOutlet weak var pinButton: UIBarButtonItem!
@@ -24,7 +23,16 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pinButton?.isEnabled = false
+        
+        if let vcs = self.navigationController?.viewControllers {
+            let previousVC = vcs[vcs.count - 2]
+            if previousVC is MainPageViewController {
+                pinButton?.isEnabled = false
+                myPageButton?.isEnabled = false
+                symptomTestButton?.isEnabled = false
+            }
+        }
+        
         LocationManager.shared.getUserLocation { [weak self] location in
             DispatchQueue.main.async {
                 guard let strongSelf = self else {
@@ -54,9 +62,9 @@ class MapViewController: UIViewController {
         let pin = MKPointAnnotation()
         pin.coordinate = location.coordinate
         mapView?.setRegion(MKCoordinateRegion(center: location.coordinate,
-                                             span: MKCoordinateSpan(latitudeDelta: 0.05,
-                                                                    longitudeDelta: 0.05)),
-                          animated: true)
+                                              span: MKCoordinateSpan(latitudeDelta: 0.05,
+                                                                     longitudeDelta: 0.05)),
+                           animated: true)
     }
     
     func relocate() {

@@ -9,6 +9,9 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
     
+    let userArray = DataBaseCommands.presentRows()
+    var user = User(id: 1, userName: "", name: "", surname: "", gender: true, dateOfBirth: "".dateFromISO8601!, userPassword: "")
+    
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var surnameLabel: UILabel!
@@ -19,6 +22,8 @@ class UserProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         changePasswordButton.applyDefaultStyling(color: .black)
-        //usernameLabel.text = "Name: " + login.returnUsername()
+        usernameLabel.text = user.userName
+        nameLabel.text = user.name.uppercased()
+        surnameLabel.text = user.surname.uppercased()
     }
 }

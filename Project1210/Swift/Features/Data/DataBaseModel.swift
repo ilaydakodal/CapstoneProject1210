@@ -14,7 +14,6 @@ public class DataBaseModel {
     var database: Connection?
     
     private init() {
-        // Create connection to database
         do {
             let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             
@@ -25,7 +24,7 @@ public class DataBaseModel {
             print("Creating connection to database error: \(error)")
         }
     }
-    // Creating Table
+    
     func createTable() {
         DataBaseCommands.createTable()
     }

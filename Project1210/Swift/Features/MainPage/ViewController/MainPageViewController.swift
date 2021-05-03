@@ -9,7 +9,6 @@ import UIKit
 
 class MainPageViewController: UIViewController {
     
-
     @IBOutlet weak var mainPageSignUpButton: UIButton!
     @IBOutlet weak var mainPageLoginButton: UIButton!
     @IBOutlet weak var mainPageGuestLoginButton: UIButton!
@@ -23,10 +22,7 @@ class MainPageViewController: UIViewController {
 
     @IBAction func gusetLoginPressed(_ sender: Any) {
         DispatchQueue.main.async {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let mapViewController = storyBoard.instantiateViewController(withIdentifier: "mapnavi") as! UINavigationController
-            mapViewController.modalPresentationStyle = .fullScreen
-            self.present(mapViewController, animated: true, completion: nil)
+            self.performSegue(withIdentifier: "guestToMap", sender: nil)
         }
     }
 }

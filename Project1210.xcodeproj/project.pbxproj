@@ -45,7 +45,7 @@
 		88D43FE12635D88D00A6CD6A /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FDF2635D88D00A6CD6A /* UserTableViewCell.swift */; };
 		88D43FE22635D88D00A6CD6A /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43FE02635D88D00A6CD6A /* UserTableViewCell.xib */; };
 		88D43FEC2635DB4B00A6CD6A /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FEB2635DB4B00A6CD6A /* SignUpViewModel.swift */; };
-		88D440352635E37000A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D440342635E37000A6CD6A /* CoronaPredictModelFinal.mlmodel */; };
+		88D44058263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D44057263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +109,7 @@
 		88D43FDF2635D88D00A6CD6A /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		88D43FE02635D88D00A6CD6A /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		88D43FEB2635DB4B00A6CD6A /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		88D440342635E37000A6CD6A /* CoronaPredictModelFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CoronaPredictModelFinal.mlmodel; path = ../../../../CoronaPredictModelFinal.mlmodel; sourceTree = "<group>"; };
+		88D44057263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CoronaPredictModelFinal.mlmodel; path = ../../../CoronaPredictModelFinal.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +165,7 @@
 				882667A9261A02C400657C23 /* Main.storyboard */,
 				882667B1261A02C400657C23 /* LaunchScreen.storyboard */,
 				882667B4261A02C400657C23 /* Info.plist */,
-				88D440342635E37000A6CD6A /* CoronaPredictModelFinal.mlmodel */,
+				88D44057263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel */,
 			);
 			path = Project1210;
 			sourceTree = "<group>";
@@ -608,7 +608,7 @@
 				88D43FEC2635DB4B00A6CD6A /* SignUpViewModel.swift in Sources */,
 				88D43FAE2635D60E00A6CD6A /* UIView+Alert.swift in Sources */,
 				88D43FD72635D7A500A6CD6A /* UserModel.swift in Sources */,
-				88D440352635E37000A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */,
+				88D44058263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */,
 				88D43FB72635D6CA00A6CD6A /* UserInfoPresentation.swift in Sources */,
 				88266807261C730C00657C23 /* UserProfileViewController.swift in Sources */,
 				88D43FD22635D78000A6CD6A /* DataBaseModel.swift in Sources */,

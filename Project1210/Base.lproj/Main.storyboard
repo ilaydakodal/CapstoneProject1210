@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oUq-NP-5xl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wellcome Back !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndr-9p-Cd5">
-                                <rect key="frame" x="68" y="412" width="278" height="40.5"/>
+                                <rect key="frame" x="68" y="456" width="278" height="40.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
                                 <color key="textColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="MainPageImage" translatesAutoresizingMaskIntoConstraints="NO" id="h3C-3y-Ps6">
-                                <rect key="frame" x="27" y="52" width="360" height="360"/>
+                                <rect key="frame" x="27" y="96" width="360" height="360"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="R9D-BF-qzB"/>
                                     <constraint firstAttribute="height" constant="360" id="vzM-kM-XGu"/>
@@ -41,7 +41,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="az9-D7-4eC" kind="presentation" modalPresentationStyle="fullScreen" id="0LR-7z-bAj"/>
+                                    <segue destination="az9-D7-4eC" kind="show" id="McN-ml-xX0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7o-EJ-iEB">
@@ -55,7 +55,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Dnp-dC-Hdd" kind="presentation" modalPresentationStyle="fullScreen" id="Ley-Dl-Qb0"/>
+                                    <segue destination="Dms-oC-2Wb" kind="show" id="PIS-qg-SqN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Don't want to Sign Up? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enl-4h-flT">
@@ -102,11 +102,12 @@
                         <outlet property="mainPageGuestLoginButton" destination="p8F-T7-MXj" id="exS-Dd-BWc"/>
                         <outlet property="mainPageLoginButton" destination="Q7o-EJ-iEB" id="CV0-vu-cww"/>
                         <outlet property="mainPageSignUpButton" destination="Y2d-6f-stg" id="zzj-EI-Wj3"/>
+                        <segue destination="iOR-DA-2LR" kind="show" identifier="guestToMap" id="6z4-zb-0aw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2089.8550724637685" y="2.6785714285714284"/>
+            <point key="canvasLocation" x="-1181.1594202898552" y="2.6785714285714284"/>
         </scene>
         <!--Login-->
         <scene sceneID="28i-xw-R4E">
@@ -168,6 +169,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NPU-3i-Hwr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="r4o-UO-J6z" firstAttribute="top" secondItem="I0h-ea-f8D" secondAttribute="bottom" constant="4" id="1Dt-Yz-QuX"/>
                             <constraint firstItem="Avc-td-a8d" firstAttribute="centerX" secondItem="r4o-UO-J6z" secondAttribute="centerX" id="3mR-1u-oRw"/>
@@ -189,23 +191,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="for-Wq-WR9">
-                        <barButtonItem key="backBarButtonItem" title="back" id="cBz-cq-P8g"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="xIc-cB-Xab">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jAQ-Jd-52g">
-                                <rect key="frame" x="20" y="11" width="57.5" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title=" Back" image="chevron.backward" catalog="system">
-                                    <color key="titleColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <color key="tintColor" red="0.18852409719999999" green="0.22512838239999999" blue="0.50646257400000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="backBarButtonItem" title="Exit" id="cb6-9w-H71">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="loginButton" destination="Avc-td-a8d" id="TNA-3x-0fk"/>
                         <outlet property="passwordTextField" destination="r4o-UO-J6z" id="PKv-em-s2U"/>
                         <outlet property="userNameTextField" destination="ehe-my-7aH" id="9m4-bv-nwp"/>
+                        <segue destination="iOR-DA-2LR" kind="show" identifier="loginToMapPage" id="rCZ-X0-pMa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moa-3F-AkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -263,7 +257,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" id="PRN-lQ-0Za">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uI7-fC-FQS">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uI7-fC-FQS">
                                             <rect key="frame" x="307" y="5" width="87" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="tintColor" red="0.92102593180000003" green="0.94162112470000003" blue="0.96470040079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -301,11 +295,7 @@
                             <constraint firstItem="NIh-fD-jWT" firstAttribute="leading" secondItem="5j5-vq-K5R" secondAttribute="leading" id="rx3-EQ-zbK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Covid-19" largeTitleDisplayMode="never" id="bSM-Y2-z9j">
-                        <barButtonItem key="backBarButtonItem" title="Exit" image="chevron.backward" catalog="system" id="4Oz-e7-pvi">
-                            <color key="tintColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Covid-19" largeTitleDisplayMode="never" id="bSM-Y2-z9j"/>
                     <connections>
                         <outlet property="mapView" destination="NIh-fD-jWT" id="utL-ot-LDu"/>
                         <outlet property="myPageButton" destination="FH6-u8-xia" id="M98-z9-dCI"/>
@@ -315,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxF-0a-ubi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-713.04347826086962" y="977.67857142857133"/>
+            <point key="canvasLocation" x="-906" y="1359"/>
         </scene>
         <!--adminView-->
         <scene sceneID="f9J-VQ-fMh">
@@ -560,7 +550,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="e2b-qa-4tR">
                                             <color key="tintColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="signupToMain" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="H62-jw-NRr"/>
+                                                <segue destination="oUq-NP-5xl" kind="presentation" identifier="signupToMain" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="H62-jw-NRr"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -622,6 +612,7 @@
                             <constraint firstItem="2lL-br-Y0y" firstAttribute="top" secondItem="ccs-Ys-czX" secondAttribute="bottom" constant="4" id="ygo-ES-E26"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JAX-7G-qZx"/>
                     <connections>
                         <outlet property="dateOfBirthTextField" destination="CbN-lw-Eg7" id="bFM-1p-qzm"/>
                         <outlet property="genderSegmentControl" destination="hc6-7J-4Yk" id="6wt-Ym-opy"/>
@@ -635,7 +626,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GYz-FS-2SB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-600" y="2.6785714285714284"/>
+            <point key="canvasLocation" x="310.14492753623193" y="2.6785714285714284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3d4-JM-EbQ">
@@ -662,36 +653,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KgV-S9-4ys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3801.449275362319" y="958.92857142857133"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="E3l-P5-Llb">
-            <objects>
-                <navigationController storyboardIdentifier="mapnavi" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wAh-yn-2NQ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Nho-g7-gF1">
-                        <barButtonItem key="backBarButtonItem" title="Exit" id="bC8-xM-9ku"/>
-                    </navigationItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mUG-iO-zfF">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="iOR-DA-2LR" kind="relationship" relationship="rootViewController" id="jyR-Cg-dW8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FZf-zO-0sK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1991" y="1343"/>
+            <point key="canvasLocation" x="-3965" y="840"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kys-k8-UuE">
@@ -712,7 +674,34 @@
             </objects>
             <point key="canvasLocation" x="152.17391304347828" y="977.67857142857133"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZF3-hR-Euz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oUq-NP-5xl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="E8a-ay-Kcv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="chevron.backward" catalog="system" id="DzL-qk-YaU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="c8x-vp-5Gm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJk-Mf-J6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2091.304347826087" y="2.6785714285714284"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6z4-zb-0aw"/>
+        <segue reference="PIS-qg-SqN"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="MainPageImage" width="7730" height="7730"/>
         <image name="Wavy_Ppl-02_Single-1" width="7695" height="7666"/>
