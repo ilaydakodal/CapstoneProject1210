@@ -88,7 +88,8 @@ class SignUpViewController: UIViewController {
  
     func verifyPassword() {
         if passwordTextField.text != passwordValidationTextField.text{
-            showError("Error", message: "Password does not match")
+            showError("Error", message: "Your password must be at least 8 characters")
+            //Please make sure your passwords match
         }
     }
 

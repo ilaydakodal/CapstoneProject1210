@@ -10,12 +10,6 @@ import Foundation
 class UserListViewModel {
     
     private var userArray = [User]()
-            var changeHandler: ((Change) -> Void)?
-    
-    enum Change {
-        case presentation(presentation: UserInfoPresentation.MainPresentation)
-        case alert(message: String)
-    }
     
     func connectToDatabase() {
         _ = DataBaseModel.sharedInstance
@@ -25,14 +19,14 @@ class UserListViewModel {
         userArray = DataBaseCommands.presentRows() ?? []
     }
     
-    func numberOfRowsInSection (section: Int) -> Int {
+    func numberOfRowsInSection(section: Int) -> Int {
         if userArray.count != 0 {
             return userArray.count
         }
         return 0
     }
     
-    func cellForRowAt (indexPath: IndexPath) -> User {
+    func cellForRowAt(indexPath: IndexPath) -> User {
         return userArray[indexPath.row]
     }
 }

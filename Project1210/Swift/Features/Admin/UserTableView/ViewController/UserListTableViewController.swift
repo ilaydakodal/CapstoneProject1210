@@ -9,27 +9,23 @@ import UIKit
 
 class UserListTableViewController: UITableViewController  {
     
-     private var smallPresentation: [UserInfoPresentation] = []
+    private var smallPresentation: [UserInfoPresentation] = []
     private lazy var cellView = UserTableViewCell()
-    //var viewModel: UserListViewModel!
-    
     private var viewModel = UserListViewModel()
     
     @IBOutlet var userTableView: UITableView!
     
-    //let database = DataBaseModel()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "User List"
-        //userTableView.delegate = self
-        //userTableView.dataSource = self
         viewModel.connectToDatabase()
-        //userTableView?.registerNibCell(UserTableViewCell.self)
         tableView.registerNibCell(UserTableViewCell.self)
-        //bindViewModel()
     }
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         loadData()
@@ -41,48 +37,17 @@ class UserListTableViewController: UITableViewController  {
     }
     
     func configurView(name: String, userSurname: String) {
-       
+        
         //User.append(UserInfoPresentation(id: "", userName: "", name: "", surname: "", gender: "", dateOfBirth: ""))
     }
-    
-    /*func bindViewModel(){
-        viewModel = UserListViewModel()
-        viewModel.changeHandler = { [weak self] change in
-            self!.applyChange(change)
-        }
-    }
-    
-     func applyChange(_ change: UserListViewModel.Change) {
-        switch change {
-        case .presentation(let presentation):
-            self.smallPresentation = presentation.smallInfoPresentation
-            cellView.fill(presentation.smallInfoPresentation[0])
-            tableView.reloadData()
-        case .alert:
-            break
-        }
-    }
-}*/
 }
 
 // MARK: - Table view data source
 extension UserListTableViewController {
-    
-    //override func numberOfSections(in tableView: UITableView) -> Int {
-        //return 1
-    //}
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.numberOfRowsInSection(section: section)
     }
-    
-   /* override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return UserListViewModel.cellForRowAt(userArray[])
-            //smallPresentation.count
-            //viewModel.numberOfRowsInSection(section: section)
-        
-        //return database.getUserList().count
-    }*/
     
     // Configure the cell...
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

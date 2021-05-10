@@ -26,6 +26,13 @@
 		88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8826681F261CEC7300657C23 /* SymptomTestViewController.xib */; };
 		885583E1264020FB002CAF41 /* AdminSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885583DF264020FB002CAF41 /* AdminSymptomViewController.swift */; };
 		885583E2264020FB002CAF41 /* AdminSymptomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885583E0264020FB002CAF41 /* AdminSymptomViewController.xib */; };
+		885583FA2642984A002CAF41 /* SymptomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885583F92642984A002CAF41 /* SymptomModel.swift */; };
+		8855840026429D27002CAF41 /* AdminModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885583FF26429D27002CAF41 /* AdminModel.swift */; };
+		8855840A2642A084002CAF41 /* AdminSymptomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885584082642A084002CAF41 /* AdminSymptomTableViewController.swift */; };
+		8855840B2642A084002CAF41 /* AdminSymptomTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885584092642A084002CAF41 /* AdminSymptomTableViewController.xib */; };
+		885584162642A125002CAF41 /* AdminSymptomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885584142642A125002CAF41 /* AdminSymptomTableViewCell.swift */; };
+		885584172642A125002CAF41 /* AdminSymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885584152642A125002CAF41 /* AdminSymptomTableViewCell.xib */; };
+		8855841C2642A64F002CAF41 /* AdminCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855841B2642A64F002CAF41 /* AdminCellModel.swift */; };
 		88D43E16262B122B00A6CD6A /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 88D43E15262B122B00A6CD6A /* SQLite */; };
 		88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E40262C1E2700A6CD6A /* DateFormatter.swift */; };
 		88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */; };
@@ -93,6 +100,13 @@
 		8826681F261CEC7300657C23 /* SymptomTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomTestViewController.xib; sourceTree = "<group>"; };
 		885583DF264020FB002CAF41 /* AdminSymptomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSymptomViewController.swift; sourceTree = "<group>"; };
 		885583E0264020FB002CAF41 /* AdminSymptomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminSymptomViewController.xib; sourceTree = "<group>"; };
+		885583F92642984A002CAF41 /* SymptomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomModel.swift; sourceTree = "<group>"; };
+		885583FF26429D27002CAF41 /* AdminModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminModel.swift; sourceTree = "<group>"; };
+		885584082642A084002CAF41 /* AdminSymptomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSymptomTableViewController.swift; sourceTree = "<group>"; };
+		885584092642A084002CAF41 /* AdminSymptomTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminSymptomTableViewController.xib; sourceTree = "<group>"; };
+		885584142642A125002CAF41 /* AdminSymptomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSymptomTableViewCell.swift; sourceTree = "<group>"; };
+		885584152642A125002CAF41 /* AdminSymptomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminSymptomTableViewCell.xib; sourceTree = "<group>"; };
+		8855841B2642A64F002CAF41 /* AdminCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCellModel.swift; sourceTree = "<group>"; };
 		88D43E40262C1E2700A6CD6A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexFormatter.swift; sourceTree = "<group>"; };
 		88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
@@ -283,6 +297,68 @@
 			path = AdminSymptoms;
 			sourceTree = "<group>";
 		};
+		885583F82642983C002CAF41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				885583F92642984A002CAF41 /* SymptomModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		885583FE26429D19002CAF41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				885583FF26429D27002CAF41 /* AdminModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		885584072642A017002CAF41 /* AdminSymptomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				885584082642A084002CAF41 /* AdminSymptomTableViewController.swift */,
+				885584092642A084002CAF41 /* AdminSymptomTableViewController.xib */,
+			);
+			path = AdminSymptomViewController;
+			sourceTree = "<group>";
+		};
+		885584122642A09A002CAF41 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				885584132642A0CE002CAF41 /* AdminSymptomCell */,
+				885583DE264020BD002CAF41 /* AdminSymptoms */,
+				885584072642A017002CAF41 /* AdminSymptomViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		885584132642A0CE002CAF41 /* AdminSymptomCell */ = {
+			isa = PBXGroup;
+			children = (
+				885584142642A125002CAF41 /* AdminSymptomTableViewCell.swift */,
+				885584152642A125002CAF41 /* AdminSymptomTableViewCell.xib */,
+				8855841B2642A64F002CAF41 /* AdminCellModel.swift */,
+			);
+			path = AdminSymptomCell;
+			sourceTree = "<group>";
+		};
+		885584202642A711002CAF41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88D43FD12635D78000A6CD6A /* DataBaseModel.swift */,
+				88D43FD62635D7A500A6CD6A /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		885584212642A721002CAF41 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				88D43FC92635D75F00A6CD6A /* DataBaseCommands.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
 		88D43E22262B137E00A6CD6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +412,7 @@
 		88D43EB6262DA4BC00A6CD6A /* SymptomsTest */ = {
 			isa = PBXGroup;
 			children = (
+				885583F82642983C002CAF41 /* Model */,
 				8826681E261CEC7300657C23 /* SymptomTestViewController.swift */,
 				8826681F261CEC7300657C23 /* SymptomTestViewController.xib */,
 			);
@@ -354,9 +431,10 @@
 		88D43EB8262DA50100A6CD6A /* Admin */ = {
 			isa = PBXGroup;
 			children = (
-				885583DE264020BD002CAF41 /* AdminSymptoms */,
 				88D43FDE2635D7FF00A6CD6A /* AdminMain */,
+				885584122642A09A002CAF41 /* Controllers */,
 				88D43EC7262DB26900A6CD6A /* LogView */,
+				885583FE26429D19002CAF41 /* Model */,
 				88D43EC6262DB26200A6CD6A /* UserTableView */,
 			);
 			path = Admin;
@@ -426,9 +504,8 @@
 		88D43FC82635D73100A6CD6A /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				88D43FC92635D75F00A6CD6A /* DataBaseCommands.swift */,
-				88D43FD12635D78000A6CD6A /* DataBaseModel.swift */,
-				88D43FD62635D7A500A6CD6A /* UserModel.swift */,
+				885584212642A721002CAF41 /* Commands */,
+				885584202642A711002CAF41 /* Model */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -572,7 +649,9 @@
 				88266808261C730C00657C23 /* UserProfileViewController.xib in Resources */,
 				88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */,
 				88D43ECB262DB2A900A6CD6A /* LogViewController.xib in Resources */,
+				8855840B2642A084002CAF41 /* AdminSymptomTableViewController.xib in Resources */,
 				882667B0261A02C400657C23 /* Assets.xcassets in Resources */,
+				885584172642A125002CAF41 /* AdminSymptomTableViewCell.xib in Resources */,
 				88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */,
 				882667AB261A02C400657C23 /* Main.storyboard in Resources */,
 				885583E2264020FB002CAF41 /* AdminSymptomViewController.xib in Resources */,
@@ -609,13 +688,16 @@
 				88266820261CEC7300657C23 /* SymptomTestViewController.swift in Sources */,
 				88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */,
 				88D43FC12635D71900A6CD6A /* UserListViewModel.swift in Sources */,
+				8855840A2642A084002CAF41 /* AdminSymptomTableViewController.swift in Sources */,
 				882667E5261A03FD00657C23 /* UIButton+Styling.swift in Sources */,
 				882667A4261A02C400657C23 /* AppDelegate.swift in Sources */,
+				885583FA2642984A002CAF41 /* SymptomModel.swift in Sources */,
 				882667F7261A11A300657C23 /* LoginViewController.swift in Sources */,
 				88D43ECA262DB2A900A6CD6A /* LogViewController.swift in Sources */,
 				882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */,
 				88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */,
 				88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */,
+				885584162642A125002CAF41 /* AdminSymptomTableViewCell.swift in Sources */,
 				882667AE261A02C400657C23 /* Project1210.xcdatamodeld in Sources */,
 				88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */,
 				88D43FE12635D88D00A6CD6A /* UserTableViewCell.swift in Sources */,
@@ -624,9 +706,11 @@
 				88D43FAE2635D60E00A6CD6A /* UIView+Alert.swift in Sources */,
 				88D43FD72635D7A500A6CD6A /* UserModel.swift in Sources */,
 				885583E1264020FB002CAF41 /* AdminSymptomViewController.swift in Sources */,
+				8855841C2642A64F002CAF41 /* AdminCellModel.swift in Sources */,
 				88D44058263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */,
 				88D43FB72635D6CA00A6CD6A /* UserInfoPresentation.swift in Sources */,
 				88266807261C730C00657C23 /* UserProfileViewController.swift in Sources */,
+				8855840026429D27002CAF41 /* AdminModel.swift in Sources */,
 				88D43FD22635D78000A6CD6A /* DataBaseModel.swift in Sources */,
 				882667F2261A045300657C23 /* MapViewController.swift in Sources */,
 			);

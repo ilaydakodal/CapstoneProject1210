@@ -69,6 +69,9 @@
                             <state key="normal" title="Change Password">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="changePasswordPressed:" destination="-1" eventType="touchUpInside" id="n6w-Ex-BNZ"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Surname:  Kodal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmS-2i-FWn">
                             <rect key="frame" x="77" y="431" width="260" height="30"/>

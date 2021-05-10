@@ -8,6 +8,8 @@
 import Foundation
 
 struct User {
+    static var shared: User?
+    
     var id: Int
     var userName: String
     var name: String

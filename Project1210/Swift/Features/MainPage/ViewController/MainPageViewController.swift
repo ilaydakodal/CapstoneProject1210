@@ -9,6 +9,7 @@ import UIKit
 
 class MainPageViewController: UIViewController {
     
+    let database = DataBaseCommands()
     @IBOutlet weak var mainPageSignUpButton: UIButton!
     @IBOutlet weak var mainPageLoginButton: UIButton!
     @IBOutlet weak var mainPageGuestLoginButton: UIButton!
@@ -18,6 +19,8 @@ class MainPageViewController: UIViewController {
         mainPageSignUpButton.applyDefaultStyling(color: .black)
         mainPageLoginButton.applyDefaultStyling(color: .black)
         mainPageGuestLoginButton.applyDefaultStyling(color: .black)
+        database.createAdminTable()
+        database.createSymptomTable()
     }
 
     @IBAction func gusetLoginPressed(_ sender: Any) {

@@ -24,10 +24,11 @@ class AdminPageViewController: UIViewController {
         let vc = AdminSymptomViewController()
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
-        
     }
     
     @IBAction func logButtonPressed(_ sender: UIButton) {
+        
+        
     }
     
     let userTable = UserListTableViewController()

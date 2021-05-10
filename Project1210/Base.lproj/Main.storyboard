@@ -200,11 +200,12 @@
                         <outlet property="passwordTextField" destination="r4o-UO-J6z" id="PKv-em-s2U"/>
                         <outlet property="userNameTextField" destination="ehe-my-7aH" id="9m4-bv-nwp"/>
                         <segue destination="iOR-DA-2LR" kind="show" identifier="loginToMapPage" id="rCZ-X0-pMa"/>
+                        <segue destination="bvz-Qh-JSm" kind="show" identifier="logiToAdmin" id="1sY-19-D4w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moa-3F-AkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2891.304347826087" y="958.92857142857133"/>
+            <point key="canvasLocation" x="-2251" y="978"/>
         </scene>
         <!--loginToMap-->
         <scene sceneID="Kqo-r1-yfT">
@@ -295,7 +296,9 @@
                             <constraint firstItem="NIh-fD-jWT" firstAttribute="leading" secondItem="5j5-vq-K5R" secondAttribute="leading" id="rx3-EQ-zbK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Covid-19" largeTitleDisplayMode="never" id="bSM-Y2-z9j"/>
+                    <navigationItem key="navigationItem" title="Covid-19" largeTitleDisplayMode="never" id="bSM-Y2-z9j">
+                        <barButtonItem key="backBarButtonItem" title="back" id="JCa-UW-KW2"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="NIh-fD-jWT" id="utL-ot-LDu"/>
                         <outlet property="myPageButton" destination="FH6-u8-xia" id="M98-z9-dCI"/>
@@ -312,92 +315,73 @@
             <objects>
                 <viewController restorationIdentifier="adminView" storyboardIdentifier="adminView" title="adminView" id="bvz-Qh-JSm" customClass="AdminPageViewController" customModule="Project1210" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VT8-F0-Jvy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="BPo-Pi-NeU">
-                                <rect key="frame" x="142" y="207" width="130" height="450"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56T-N5-UeI">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
-                                        <color key="backgroundColor" red="0.31181344389999999" green="0.37203043699999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="130" id="SI0-Me-AIa"/>
-                                            <constraint firstAttribute="height" constant="130" id="Zdg-5d-F2S"/>
-                                        </constraints>
-                                        <state key="normal" title="Add Symptoms">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="addSymptomsButtonPressed:" destination="bvz-Qh-JSm" eventType="touchUpInside" id="xyv-Ex-I30"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBv-I2-MzX">
-                                        <rect key="frame" x="0.0" y="160" width="130" height="130"/>
-                                        <color key="backgroundColor" red="0.31181344389999999" green="0.37203043699999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="130" id="Kvz-gd-n6y"/>
-                                            <constraint firstAttribute="width" constant="130" id="jji-s7-tez"/>
-                                        </constraints>
-                                        <state key="normal" title="log">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="logButtonPressed:" destination="bvz-Qh-JSm" eventType="touchUpInside" id="FIw-0F-aav"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mN-ur-jd4">
-                                        <rect key="frame" x="0.0" y="320" width="130" height="130"/>
-                                        <color key="backgroundColor" red="0.31181344389999999" green="0.37203043699999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="130" id="o5K-Tg-DiD"/>
-                                            <constraint firstAttribute="width" constant="130" id="rEp-L3-Qcs"/>
-                                        </constraints>
-                                        <state key="normal" title="User List">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="userListButtonPressed:" destination="bvz-Qh-JSm" eventType="touchUpInside" id="5Rv-dB-svb"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zAv-ZX-Rcv">
-                                <rect key="frame" x="0.0" y="35" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <textAttributes key="largeTitleTextAttributes">
-                                    <color key="textColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Admin" id="2bY-mk-D74">
-                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="ma1-ka-Zzj">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="vuk-Kc-KEZ">
-                                                <rect key="frame" x="20" y="13" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Exit ">
-                                                    <color key="titleColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                            <color key="tintColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <action selector="exitButtonPressed:" destination="bvz-Qh-JSm" id="Vkq-x4-0XA"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mN-ur-jd4">
+                                <rect key="frame" x="20" y="395" width="160" height="160"/>
+                                <color key="backgroundColor" red="0.15297722820000001" green="0.1604086757" blue="0.2433324754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="o5K-Tg-DiD"/>
+                                    <constraint firstAttribute="width" constant="160" id="rEp-L3-Qcs"/>
+                                </constraints>
+                                <state key="normal" title="User List">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="userListButtonPressed:" destination="bvz-Qh-JSm" eventType="touchUpInside" id="5Rv-dB-svb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56T-N5-UeI">
+                                <rect key="frame" x="234" y="395" width="160" height="160"/>
+                                <color key="backgroundColor" red="0.15297722820000001" green="0.1604086757" blue="0.2433324754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="SI0-Me-AIa"/>
+                                    <constraint firstAttribute="height" constant="160" id="Zdg-5d-F2S"/>
+                                </constraints>
+                                <state key="normal" title="Add Symptoms">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addSymptomsButtonPressed:" destination="bvz-Qh-JSm" eventType="touchUpInside" id="xyv-Ex-I30"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Admin" translatesAutoresizingMaskIntoConstraints="NO" id="YrC-IU-xdy">
+                                <rect key="frame" x="107" y="118" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7ZX-9r-3hL"/>
+                                    <constraint firstAttribute="height" constant="200" id="agT-Xr-HyX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBv-I2-MzX">
+                                <rect key="frame" x="20" y="575" width="160" height="160"/>
+                                <color key="backgroundColor" red="0.15297722820000001" green="0.1604086757" blue="0.2433324754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Kvz-gd-n6y"/>
+                                    <constraint firstAttribute="width" constant="160" id="jji-s7-tez"/>
+                                </constraints>
+                                <state key="normal" title="log">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logButtonPressed:" destination="bvz-Qh-JSm" eventType="touchUpInside" id="FIw-0F-aav"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TXb-6K-evV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="BPo-Pi-NeU" firstAttribute="centerY" secondItem="TXb-6K-evV" secondAttribute="centerY" id="KBp-hQ-Rx2"/>
-                            <constraint firstItem="BPo-Pi-NeU" firstAttribute="centerX" secondItem="TXb-6K-evV" secondAttribute="centerX" id="xYO-XT-zpG"/>
+                            <constraint firstItem="YrC-IU-xdy" firstAttribute="top" secondItem="VT8-F0-Jvy" secondAttribute="topMargin" constant="30" id="4GR-nD-KYT"/>
+                            <constraint firstItem="56T-N5-UeI" firstAttribute="centerY" secondItem="6mN-ur-jd4" secondAttribute="centerY" id="AJB-SA-eIT"/>
+                            <constraint firstItem="6mN-ur-jd4" firstAttribute="centerY" secondItem="TXb-6K-evV" secondAttribute="centerY" id="EzJ-9p-Liq"/>
+                            <constraint firstItem="6mN-ur-jd4" firstAttribute="leading" secondItem="TXb-6K-evV" secondAttribute="leading" constant="20" id="Fie-gA-Zqj"/>
+                            <constraint firstItem="cBv-I2-MzX" firstAttribute="top" secondItem="6mN-ur-jd4" secondAttribute="bottom" constant="20" id="JgE-3t-W9r"/>
+                            <constraint firstItem="YrC-IU-xdy" firstAttribute="centerX" secondItem="TXb-6K-evV" secondAttribute="centerX" id="U60-t1-p7A"/>
+                            <constraint firstItem="TXb-6K-evV" firstAttribute="trailing" secondItem="56T-N5-UeI" secondAttribute="trailing" constant="20" id="aZ9-EO-UEo"/>
+                            <constraint firstItem="cBv-I2-MzX" firstAttribute="leading" secondItem="TXb-6K-evV" secondAttribute="leading" constant="20" id="qFy-Iy-nDu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uNz-gt-CnP"/>
+                    <navigationItem key="navigationItem" title="Admin" id="uNz-gt-CnP"/>
                     <connections>
                         <outlet property="addSymptomsButton" destination="56T-N5-UeI" id="iSt-ky-fbk"/>
                         <outlet property="logButton" destination="cBv-I2-MzX" id="Agy-Uz-2bd"/>
@@ -648,21 +632,20 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="Dms-oC-2Wb" kind="relationship" relationship="rootViewController" id="5GZ-14-oWR"/>
-                        <segue destination="UHN-Sc-HME" kind="show" id="syr-lC-Zp4"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KgV-S9-4ys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3965" y="840"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Admin-->
         <scene sceneID="Kys-k8-UuE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UHN-Sc-HME" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="adminNavigation" automaticallyAdjustsScrollViewInsets="NO" id="UHN-Sc-HME" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="dND-Jl-V3k"/>
+                    <navigationItem key="navigationItem" title="Admin" id="dND-Jl-V3k"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2L2-aN-zgX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -699,10 +682,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="LkJ-nU-aPt"/>
         <segue reference="6z4-zb-0aw"/>
         <segue reference="PIS-qg-SqN"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Admin" width="1396" height="1439"/>
         <image name="MainPageImage" width="7730" height="7730"/>
         <image name="Wavy_Ppl-02_Single-1" width="7695" height="7666"/>
         <image name="Wavy_Ppl-04_Single-4" width="7324" height="7316"/>

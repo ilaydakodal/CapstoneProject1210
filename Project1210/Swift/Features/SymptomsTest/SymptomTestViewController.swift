@@ -84,7 +84,7 @@ class SymptomTestViewController: UIViewController {
             answerButtonA.setTitle(questions[questionNumber].answerA, for: .normal)
             answerButtonB.setTitle(questions[questionNumber].answerB, for: .normal)
         } else if questionNumber >= questions.count {
-            questionLabel.text = "Have a gerat day!"
+            questionLabel.text = "Have a great day!"
             answerButtonA.isHidden = true
             progressBar.isHidden = true
             answerButtonB.setTitle("Exit", for: .normal)
@@ -106,7 +106,7 @@ class SymptomTestViewController: UIViewController {
         }
         
         if  answerButtonA.isTouchInside && questionNumber == 2 {
-            questionLabel.text = "Have a gerat day!"
+            questionLabel.text = "Have a great day!"
             answerButtonA.isHidden = true
             progressBar.isHidden = true
             answerButtonB.setTitle("Exit", for: .normal)

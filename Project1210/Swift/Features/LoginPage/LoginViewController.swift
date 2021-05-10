@@ -9,6 +9,7 @@ import UIKit
 import SQLite
 
 class LoginViewController: UIViewController {
+    
     var user = User(id: 1, userName: "", name: "", surname: "", gender: true, dateOfBirth: "".dateFromISO8601!, userPassword: "")
 
     let database = DataBaseCommands()
@@ -38,16 +39,14 @@ class LoginViewController: UIViewController {
         else { return }
         checkEmptyField(username: userNameText, password: passwordText)
         
-        if checkAdminLogin(adminUser: userNameText, adminPass: passwordText) {
+        if database.checkAdminUser(username: userNameText, password: passwordText) {
             DispatchQueue.main.async {
-                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let admin = storyBoard.instantiateViewController(withIdentifier: "adminView") as! AdminPageViewController
-                admin.modalPresentationStyle = .fullScreen
-                self.present(admin, animated: true, completion: nil)
+                self.performSegue(withIdentifier: "logiToAdmin", sender: nil)
             }
         } else {
             if database.checkUserLogin(username: userNameText, password: passwordText){
                 user = database.getUserwithUsername(userNameValue: userNameText)!
+                User.shared = user
                 print(user.id)
                 DispatchQueue.main.async {
                     self.performSegue(withIdentifier: "loginToMapPage", sender: self)
@@ -70,18 +69,6 @@ extension LoginViewController {
         
     }
     
-    func checkAdminLogin(adminUser: String, adminPass: String) -> Bool {
-        var expression = false
-        let adminUserName: String = "admin"
-        let adminPassword: String = "admin"
-        let aName = userNameTextField.text
-        let apassword = passwordTextField.text
-        if aName == adminUserName && apassword == adminPassword {
-            expression = true
-        }
-        return expression
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "loginToMap" {
             let destinationVC = segue.destination as! MapViewController
@@ -89,5 +76,3 @@ extension LoginViewController {
         }
     }
 }
-
-
