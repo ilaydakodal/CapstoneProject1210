@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142000DDB7222743B097C8E1 /* libPods-Project1210UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C91315392675D03810BEBC1 /* libPods-Project1210UITests.a */; };
+		3AB0D08C8D16B0103E28F21C /* Pods_Project1210.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D3E7CE731B8FDA5C720C40 /* Pods_Project1210.framework */; };
 		882667A4261A02C400657C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667A3261A02C400657C23 /* AppDelegate.swift */; };
 		882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667A5261A02C400657C23 /* SceneDelegate.swift */; };
 		882667A8261A02C400657C23 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882667A7261A02C400657C23 /* MainPageViewController.swift */; };
@@ -24,6 +26,11 @@
 		88266808261C730C00657C23 /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88266806261C730C00657C23 /* UserProfileViewController.xib */; };
 		88266820261CEC7300657C23 /* SymptomTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826681E261CEC7300657C23 /* SymptomTestViewController.swift */; };
 		88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8826681F261CEC7300657C23 /* SymptomTestViewController.xib */; };
+		884E69C32663884A00528E7B /* currentLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 884E69C22663884A00528E7B /* currentLocation.gpx */; };
+		884E69E126652FCB00528E7B /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E69DF26652FCB00528E7B /* LogTableViewController.swift */; };
+		884E69E226652FCB00528E7B /* LogTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884E69E026652FCB00528E7B /* LogTableViewController.xib */; };
+		884E69EB2666959900528E7B /* cellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E69E92666959800528E7B /* cellTableViewCell.swift */; };
+		884E69EC2666959900528E7B /* cellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884E69EA2666959800528E7B /* cellTableViewCell.xib */; };
 		885583E1264020FB002CAF41 /* AdminSymptomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885583DF264020FB002CAF41 /* AdminSymptomViewController.swift */; };
 		885583E2264020FB002CAF41 /* AdminSymptomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885583E0264020FB002CAF41 /* AdminSymptomViewController.xib */; };
 		885583FA2642984A002CAF41 /* SymptomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885583F92642984A002CAF41 /* SymptomModel.swift */; };
@@ -33,6 +40,9 @@
 		885584162642A125002CAF41 /* AdminSymptomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885584142642A125002CAF41 /* AdminSymptomTableViewCell.swift */; };
 		885584172642A125002CAF41 /* AdminSymptomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885584152642A125002CAF41 /* AdminSymptomTableViewCell.xib */; };
 		8855841C2642A64F002CAF41 /* AdminCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855841B2642A64F002CAF41 /* AdminCellModel.swift */; };
+		8855845F26498548002CAF41 /* ML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855845E26498548002CAF41 /* ML.swift */; };
+		88558467264FF338002CAF41 /* AlgorithmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88558466264FF338002CAF41 /* AlgorithmModel.swift */; };
+		88558470264FF6B3002CAF41 /* AdminSymptom+CoronoPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8855846F264FF6B3002CAF41 /* AdminSymptom+CoronoPrediction.swift */; };
 		88D43E16262B122B00A6CD6A /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 88D43E15262B122B00A6CD6A /* SQLite */; };
 		88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E40262C1E2700A6CD6A /* DateFormatter.swift */; };
 		88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */; };
@@ -40,9 +50,6 @@
 		88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E85262C604500A6CD6A /* UserListTableViewController.swift */; };
 		88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43E86262C604500A6CD6A /* UserListTableViewController.xib */; };
 		88D43E8D262C75B600A6CD6A /* SymptomQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */; };
-		88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */; };
-		88D43ECA262DB2A900A6CD6A /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43EC8262DB2A800A6CD6A /* LogViewController.swift */; };
-		88D43ECB262DB2A900A6CD6A /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43EC9262DB2A800A6CD6A /* LogViewController.xib */; };
 		88D43EE8262E143A00A6CD6A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43EE7262E143A00A6CD6A /* LocationManager.swift */; };
 		88D43FA92635D5D400A6CD6A /* UITableView+NibRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FA82635D5D400A6CD6A /* UITableView+NibRegistering.swift */; };
 		88D43FAE2635D60E00A6CD6A /* UIView+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FAD2635D60E00A6CD6A /* UIView+Alert.swift */; };
@@ -54,7 +61,11 @@
 		88D43FE12635D88D00A6CD6A /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FDF2635D88D00A6CD6A /* UserTableViewCell.swift */; };
 		88D43FE22635D88D00A6CD6A /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D43FE02635D88D00A6CD6A /* UserTableViewCell.xib */; };
 		88D43FEC2635DB4B00A6CD6A /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D43FEB2635DB4B00A6CD6A /* SignUpViewModel.swift */; };
-		88D44058263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D44057263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel */; };
+		88D94E172656EE180021A9B1 /* finalmodel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88D94E162656EE180021A9B1 /* finalmodel.mlmodel */; };
+		88D94E2F2660081F0021A9B1 /* GoogleMapsUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 88D94E2E2660081F0021A9B1 /* GoogleMapsUtils */; };
+		88D94E3626600A1F0021A9B1 /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D94E3526600A1F0021A9B1 /* Guest.swift */; };
+		88D94E3B26600BF50021A9B1 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D94E3A26600BF50021A9B1 /* Locations.swift */; };
+		91243EA581930BDD41E7696C /* libPods-Project1210Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71C53A91E0772C73D16DA28 /* libPods-Project1210Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +86,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10D3097E1EEAD4F103193CEF /* Pods-Project1210.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project1210.release.xcconfig"; path = "Target Support Files/Pods-Project1210/Pods-Project1210.release.xcconfig"; sourceTree = "<group>"; };
+		4835A31039F33ED3491E41FD /* Pods-Project1210Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project1210Tests.release.xcconfig"; path = "Target Support Files/Pods-Project1210Tests/Pods-Project1210Tests.release.xcconfig"; sourceTree = "<group>"; };
+		51421A8D434282DF5A341126 /* Pods-Project1210Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project1210Tests.debug.xcconfig"; path = "Target Support Files/Pods-Project1210Tests/Pods-Project1210Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		62D3E7CE731B8FDA5C720C40 /* Pods_Project1210.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project1210.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C91315392675D03810BEBC1 /* libPods-Project1210UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Project1210UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		882667A0261A02C400657C23 /* Project1210.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1210.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882667A3261A02C400657C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882667A5261A02C400657C23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +114,11 @@
 		88266806261C730C00657C23 /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
 		8826681E261CEC7300657C23 /* SymptomTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomTestViewController.swift; sourceTree = "<group>"; };
 		8826681F261CEC7300657C23 /* SymptomTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomTestViewController.xib; sourceTree = "<group>"; };
+		884E69C22663884A00528E7B /* currentLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = currentLocation.gpx; path = "../../../Desktop/BAU2021/Capstone/Elif/CapstoneProject1210-main-latest/currentLocation.gpx"; sourceTree = "<group>"; };
+		884E69DF26652FCB00528E7B /* LogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
+		884E69E026652FCB00528E7B /* LogTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogTableViewController.xib; sourceTree = "<group>"; };
+		884E69E92666959800528E7B /* cellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellTableViewCell.swift; sourceTree = "<group>"; };
+		884E69EA2666959800528E7B /* cellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellTableViewCell.xib; sourceTree = "<group>"; };
 		885583DF264020FB002CAF41 /* AdminSymptomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSymptomViewController.swift; sourceTree = "<group>"; };
 		885583E0264020FB002CAF41 /* AdminSymptomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminSymptomViewController.xib; sourceTree = "<group>"; };
 		885583F92642984A002CAF41 /* SymptomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomModel.swift; sourceTree = "<group>"; };
@@ -107,15 +128,15 @@
 		885584142642A125002CAF41 /* AdminSymptomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSymptomTableViewCell.swift; sourceTree = "<group>"; };
 		885584152642A125002CAF41 /* AdminSymptomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminSymptomTableViewCell.xib; sourceTree = "<group>"; };
 		8855841B2642A64F002CAF41 /* AdminCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCellModel.swift; sourceTree = "<group>"; };
+		8855845E26498548002CAF41 /* ML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ML.swift; sourceTree = "<group>"; };
+		88558466264FF338002CAF41 /* AlgorithmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmModel.swift; sourceTree = "<group>"; };
+		8855846F264FF6B3002CAF41 /* AdminSymptom+CoronoPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdminSymptom+CoronoPrediction.swift"; sourceTree = "<group>"; };
 		88D43E40262C1E2700A6CD6A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexFormatter.swift; sourceTree = "<group>"; };
 		88D43E6E262C507300A6CD6A /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
 		88D43E85262C604500A6CD6A /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
 		88D43E86262C604500A6CD6A /* UserListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewController.xib; sourceTree = "<group>"; };
 		88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomQuestionModel.swift; sourceTree = "<group>"; };
-		88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Algorithm+Swift.swift"; sourceTree = "<group>"; };
-		88D43EC8262DB2A800A6CD6A /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
-		88D43EC9262DB2A800A6CD6A /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
 		88D43EE7262E143A00A6CD6A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		88D43FA82635D5D400A6CD6A /* UITableView+NibRegistering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+NibRegistering.swift"; sourceTree = "<group>"; };
 		88D43FAD2635D60E00A6CD6A /* UIView+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Alert.swift"; sourceTree = "<group>"; };
@@ -127,7 +148,13 @@
 		88D43FDF2635D88D00A6CD6A /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		88D43FE02635D88D00A6CD6A /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		88D43FEB2635DB4B00A6CD6A /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		88D44057263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CoronaPredictModelFinal.mlmodel; path = ../../../CoronaPredictModelFinal.mlmodel; sourceTree = "<group>"; };
+		88D94E162656EE180021A9B1 /* finalmodel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = finalmodel.mlmodel; path = ../../../../Desktop/BAU2021/Capstone/finalmodel.mlmodel; sourceTree = "<group>"; };
+		88D94E3526600A1F0021A9B1 /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
+		88D94E3A26600BF50021A9B1 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		998A915BF3D9EAB7F08439D4 /* Pods-Project1210UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project1210UITests.release.xcconfig"; path = "Target Support Files/Pods-Project1210UITests/Pods-Project1210UITests.release.xcconfig"; sourceTree = "<group>"; };
+		ABD6046D65B4C274BA85E522 /* Pods-Project1210.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project1210.debug.xcconfig"; path = "Target Support Files/Pods-Project1210/Pods-Project1210.debug.xcconfig"; sourceTree = "<group>"; };
+		C24EA4CF7432345D24151135 /* Pods-Project1210UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project1210UITests.debug.xcconfig"; path = "Target Support Files/Pods-Project1210UITests/Pods-Project1210UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D71C53A91E0772C73D16DA28 /* libPods-Project1210Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Project1210Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +162,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D94E2F2660081F0021A9B1 /* GoogleMapsUtils in Frameworks */,
 				88D43E16262B122B00A6CD6A /* SQLite in Frameworks */,
+				3AB0D08C8D16B0103E28F21C /* Pods_Project1210.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91243EA581930BDD41E7696C /* libPods-Project1210Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,19 +180,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142000DDB7222743B097C8E1 /* libPods-Project1210UITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF617E2BA5F5739CA106E53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6046D65B4C274BA85E522 /* Pods-Project1210.debug.xcconfig */,
+				10D3097E1EEAD4F103193CEF /* Pods-Project1210.release.xcconfig */,
+				51421A8D434282DF5A341126 /* Pods-Project1210Tests.debug.xcconfig */,
+				4835A31039F33ED3491E41FD /* Pods-Project1210Tests.release.xcconfig */,
+				C24EA4CF7432345D24151135 /* Pods-Project1210UITests.debug.xcconfig */,
+				998A915BF3D9EAB7F08439D4 /* Pods-Project1210UITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		88266797261A02C400657C23 = {
 			isa = PBXGroup;
 			children = (
+				884E69C22663884A00528E7B /* currentLocation.gpx */,
 				882667A2261A02C400657C23 /* Project1210 */,
 				882667BC261A02C500657C23 /* Project1210Tests */,
 				882667C7261A02C500657C23 /* Project1210UITests */,
 				882667A1261A02C400657C23 /* Products */,
+				0BF617E2BA5F5739CA106E53 /* Pods */,
+				E86770F1E49B263C84FE6A35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,7 +230,7 @@
 				882667A9261A02C400657C23 /* Main.storyboard */,
 				882667B1261A02C400657C23 /* LaunchScreen.storyboard */,
 				882667B4261A02C400657C23 /* Info.plist */,
-				88D44057263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel */,
+				88D94E162656EE180021A9B1 /* finalmodel.mlmodel */,
 			);
 			path = Project1210;
 			sourceTree = "<group>";
@@ -250,7 +297,6 @@
 			isa = PBXGroup;
 			children = (
 				88D43EE6262E142700A6CD6A /* Manager */,
-				88D43E94262D65E900A6CD6A /* Algorithm */,
 				882667DE261A038C00657C23 /* Extensions */,
 			);
 			path = Common;
@@ -261,10 +307,10 @@
 			children = (
 				88D43EB8262DA50100A6CD6A /* Admin */,
 				88D43FC82635D73100A6CD6A /* Data */,
+				88D94E33266009CC0021A9B1 /* Guest */,
 				88D43EB0262DA40900A6CD6A /* LoginPage */,
 				882667E2261A03C100657C23 /* MainPage */,
 				88D43EB4262DA44F00A6CD6A /* MapView */,
-				88D43E22262B137E00A6CD6A /* Model */,
 				88D43EB7262DA4E600A6CD6A /* SignUp */,
 				88D43EB6262DA4BC00A6CD6A /* SymptomsTest */,
 				88D43EB5262DA48600A6CD6A /* UserProfileInfo */,
@@ -291,6 +337,7 @@
 		885583DE264020BD002CAF41 /* AdminSymptoms */ = {
 			isa = PBXGroup;
 			children = (
+				8855846E264FF675002CAF41 /* Extension */,
 				885583DF264020FB002CAF41 /* AdminSymptomViewController.swift */,
 				885583E0264020FB002CAF41 /* AdminSymptomViewController.xib */,
 			);
@@ -300,6 +347,7 @@
 		885583F82642983C002CAF41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */,
 				885583F92642984A002CAF41 /* SymptomModel.swift */,
 			);
 			path = Model;
@@ -347,6 +395,7 @@
 			children = (
 				88D43FD12635D78000A6CD6A /* DataBaseModel.swift */,
 				88D43FD62635D7A500A6CD6A /* UserModel.swift */,
+				88558466264FF338002CAF41 /* AlgorithmModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -359,12 +408,12 @@
 			path = Commands;
 			sourceTree = "<group>";
 		};
-		88D43E22262B137E00A6CD6A /* Model */ = {
+		8855846E264FF675002CAF41 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				88D43E8C262C75B600A6CD6A /* SymptomQuestionModel.swift */,
+				8855846F264FF6B3002CAF41 /* AdminSymptom+CoronoPrediction.swift */,
 			);
-			path = Model;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		88D43E3F262C1E1400A6CD6A /* Formatter */ = {
@@ -374,14 +423,6 @@
 				88D43E5A262C2E3C00A6CD6A /* IndexFormatter.swift */,
 			);
 			path = Formatter;
-			sourceTree = "<group>";
-		};
-		88D43E94262D65E900A6CD6A /* Algorithm */ = {
-			isa = PBXGroup;
-			children = (
-				88D43E95262D65FE00A6CD6A /* Algorithm+Swift.swift */,
-			);
-			path = Algorithm;
 			sourceTree = "<group>";
 		};
 		88D43EB0262DA40900A6CD6A /* LoginPage */ = {
@@ -396,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				882667F1261A045300657C23 /* MapViewController.swift */,
+				88D94E3A26600BF50021A9B1 /* Locations.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -434,7 +476,6 @@
 				88D43FDE2635D7FF00A6CD6A /* AdminMain */,
 				885584122642A09A002CAF41 /* Controllers */,
 				88D43EC7262DB26900A6CD6A /* LogView */,
-				885583FE26429D19002CAF41 /* Model */,
 				88D43EC6262DB26200A6CD6A /* UserTableView */,
 			);
 			path = Admin;
@@ -462,8 +503,10 @@
 		88D43EC7262DB26900A6CD6A /* LogView */ = {
 			isa = PBXGroup;
 			children = (
-				88D43EC8262DB2A800A6CD6A /* LogViewController.swift */,
-				88D43EC9262DB2A800A6CD6A /* LogViewController.xib */,
+				884E69DF26652FCB00528E7B /* LogTableViewController.swift */,
+				884E69E026652FCB00528E7B /* LogTableViewController.xib */,
+				884E69E92666959800528E7B /* cellTableViewCell.swift */,
+				884E69EA2666959800528E7B /* cellTableViewCell.xib */,
 			);
 			path = LogView;
 			sourceTree = "<group>";
@@ -472,6 +515,7 @@
 			isa = PBXGroup;
 			children = (
 				88D43EE7262E143A00A6CD6A /* LocationManager.swift */,
+				8855845E26498548002CAF41 /* ML.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -513,6 +557,7 @@
 		88D43FDE2635D7FF00A6CD6A /* AdminMain */ = {
 			isa = PBXGroup;
 			children = (
+				885583FE26429D19002CAF41 /* Model */,
 				88D43EB9262DA53700A6CD6A /* ViewController */,
 			);
 			path = AdminMain;
@@ -535,6 +580,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		88D94E33266009CC0021A9B1 /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				88D94E34266009D90021A9B1 /* Model */,
+			);
+			path = Guest;
+			sourceTree = "<group>";
+		};
+		88D94E34266009D90021A9B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88D94E3526600A1F0021A9B1 /* Guest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E86770F1E49B263C84FE6A35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62D3E7CE731B8FDA5C720C40 /* Pods_Project1210.framework */,
+				D71C53A91E0772C73D16DA28 /* libPods-Project1210Tests.a */,
+				7C91315392675D03810BEBC1 /* libPods-Project1210UITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -542,9 +613,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 882667CD261A02C500657C23 /* Build configuration list for PBXNativeTarget "Project1210" */;
 			buildPhases = (
+				BCAFD8E852EF20CB98FEDFAC /* [CP] Check Pods Manifest.lock */,
 				8826679C261A02C400657C23 /* Sources */,
 				8826679D261A02C400657C23 /* Frameworks */,
 				8826679E261A02C400657C23 /* Resources */,
+				0012F64BC65F0B1B2AF6A208 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -553,6 +626,7 @@
 			name = Project1210;
 			packageProductDependencies = (
 				88D43E15262B122B00A6CD6A /* SQLite */,
+				88D94E2E2660081F0021A9B1 /* GoogleMapsUtils */,
 			);
 			productName = Project1210;
 			productReference = 882667A0261A02C400657C23 /* Project1210.app */;
@@ -562,6 +636,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 882667D0261A02C500657C23 /* Build configuration list for PBXNativeTarget "Project1210Tests" */;
 			buildPhases = (
+				C636ABF81BE52F7B7D14173B /* [CP] Check Pods Manifest.lock */,
 				882667B5261A02C500657C23 /* Sources */,
 				882667B6261A02C500657C23 /* Frameworks */,
 				882667B7261A02C500657C23 /* Resources */,
@@ -580,6 +655,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 882667D3261A02C500657C23 /* Build configuration list for PBXNativeTarget "Project1210UITests" */;
 			buildPhases = (
+				42207A2E4DE04948260B9ED5 /* [CP] Check Pods Manifest.lock */,
 				882667C0261A02C500657C23 /* Sources */,
 				882667C1261A02C500657C23 /* Frameworks */,
 				882667C2261A02C500657C23 /* Resources */,
@@ -627,6 +703,7 @@
 			mainGroup = 88266797261A02C400657C23;
 			packageReferences = (
 				88D43E14262B122B00A6CD6A /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				88D94E2D2660081F0021A9B1 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */,
 			);
 			productRefGroup = 882667A1261A02C400657C23 /* Products */;
 			projectDirPath = "";
@@ -648,10 +725,12 @@
 				882667B3261A02C400657C23 /* LaunchScreen.storyboard in Resources */,
 				88266808261C730C00657C23 /* UserProfileViewController.xib in Resources */,
 				88266821261CEC7300657C23 /* SymptomTestViewController.xib in Resources */,
-				88D43ECB262DB2A900A6CD6A /* LogViewController.xib in Resources */,
+				884E69C32663884A00528E7B /* currentLocation.gpx in Resources */,
 				8855840B2642A084002CAF41 /* AdminSymptomTableViewController.xib in Resources */,
 				882667B0261A02C400657C23 /* Assets.xcassets in Resources */,
 				885584172642A125002CAF41 /* AdminSymptomTableViewCell.xib in Resources */,
+				884E69E226652FCB00528E7B /* LogTableViewController.xib in Resources */,
+				884E69EC2666959900528E7B /* cellTableViewCell.xib in Resources */,
 				88D43E88262C604500A6CD6A /* UserListTableViewController.xib in Resources */,
 				882667AB261A02C400657C23 /* Main.storyboard in Resources */,
 				885583E2264020FB002CAF41 /* AdminSymptomViewController.xib in Resources */,
@@ -674,6 +753,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0012F64BC65F0B1B2AF6A208 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project1210/Pods-Project1210-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project1210/Pods-Project1210-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Project1210/Pods-Project1210-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42207A2E4DE04948260B9ED5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project1210UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCAFD8E852EF20CB98FEDFAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project1210-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C636ABF81BE52F7B7D14173B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project1210Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8826679C261A02C400657C23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -683,9 +848,9 @@
 				882667ED261A043300657C23 /* SignUpViewController.swift in Sources */,
 				88D43FA92635D5D400A6CD6A /* UITableView+NibRegistering.swift in Sources */,
 				88D43FCA2635D75F00A6CD6A /* DataBaseCommands.swift in Sources */,
-				88D43E96262D65FE00A6CD6A /* Algorithm+Swift.swift in Sources */,
 				882667A8261A02C400657C23 /* MainPageViewController.swift in Sources */,
 				88266820261CEC7300657C23 /* SymptomTestViewController.swift in Sources */,
+				884E69E126652FCB00528E7B /* LogTableViewController.swift in Sources */,
 				88D43E41262C1E2700A6CD6A /* DateFormatter.swift in Sources */,
 				88D43FC12635D71900A6CD6A /* UserListViewModel.swift in Sources */,
 				8855840A2642A084002CAF41 /* AdminSymptomTableViewController.swift in Sources */,
@@ -693,24 +858,29 @@
 				882667A4261A02C400657C23 /* AppDelegate.swift in Sources */,
 				885583FA2642984A002CAF41 /* SymptomModel.swift in Sources */,
 				882667F7261A11A300657C23 /* LoginViewController.swift in Sources */,
-				88D43ECA262DB2A900A6CD6A /* LogViewController.swift in Sources */,
 				882667A6261A02C400657C23 /* SceneDelegate.swift in Sources */,
 				88D43E5B262C2E3C00A6CD6A /* IndexFormatter.swift in Sources */,
 				88D43E87262C604500A6CD6A /* UserListTableViewController.swift in Sources */,
+				8855845F26498548002CAF41 /* ML.swift in Sources */,
 				885584162642A125002CAF41 /* AdminSymptomTableViewCell.swift in Sources */,
 				882667AE261A02C400657C23 /* Project1210.xcdatamodeld in Sources */,
 				88D43E6F262C507300A6CD6A /* AdminPageViewController.swift in Sources */,
 				88D43FE12635D88D00A6CD6A /* UserTableViewCell.swift in Sources */,
 				88D43EE8262E143A00A6CD6A /* LocationManager.swift in Sources */,
+				884E69EB2666959900528E7B /* cellTableViewCell.swift in Sources */,
 				88D43FEC2635DB4B00A6CD6A /* SignUpViewModel.swift in Sources */,
+				88558470264FF6B3002CAF41 /* AdminSymptom+CoronoPrediction.swift in Sources */,
 				88D43FAE2635D60E00A6CD6A /* UIView+Alert.swift in Sources */,
 				88D43FD72635D7A500A6CD6A /* UserModel.swift in Sources */,
 				885583E1264020FB002CAF41 /* AdminSymptomViewController.swift in Sources */,
+				88D94E3626600A1F0021A9B1 /* Guest.swift in Sources */,
 				8855841C2642A64F002CAF41 /* AdminCellModel.swift in Sources */,
-				88D44058263A7D6E00A6CD6A /* CoronaPredictModelFinal.mlmodel in Sources */,
 				88D43FB72635D6CA00A6CD6A /* UserInfoPresentation.swift in Sources */,
+				88558467264FF338002CAF41 /* AlgorithmModel.swift in Sources */,
 				88266807261C730C00657C23 /* UserProfileViewController.swift in Sources */,
 				8855840026429D27002CAF41 /* AdminModel.swift in Sources */,
+				88D94E3B26600BF50021A9B1 /* Locations.swift in Sources */,
+				88D94E172656EE180021A9B1 /* finalmodel.mlmodel in Sources */,
 				88D43FD22635D78000A6CD6A /* DataBaseModel.swift in Sources */,
 				882667F2261A045300657C23 /* MapViewController.swift in Sources */,
 			);
@@ -885,6 +1055,7 @@
 		};
 		882667CE261A02C500657C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD6046D65B4C274BA85E522 /* Pods-Project1210.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -903,6 +1074,7 @@
 		};
 		882667CF261A02C500657C23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D3097E1EEAD4F103193CEF /* Pods-Project1210.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -921,6 +1093,7 @@
 		};
 		882667D1261A02C500657C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51421A8D434282DF5A341126 /* Pods-Project1210Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -942,6 +1115,7 @@
 		};
 		882667D2261A02C500657C23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4835A31039F33ED3491E41FD /* Pods-Project1210Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -963,6 +1137,7 @@
 		};
 		882667D4261A02C500657C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C24EA4CF7432345D24151135 /* Pods-Project1210UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -982,6 +1157,7 @@
 		};
 		882667D5261A02C500657C23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 998A915BF3D9EAB7F08439D4 /* Pods-Project1210UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1049,6 +1225,14 @@
 				minimumVersion = 0.12.2;
 			};
 		};
+		88D94E2D2660081F0021A9B1 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/google-maps-ios-utils.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1056,6 +1240,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 88D43E14262B122B00A6CD6A /* XCRemoteSwiftPackageReference "SQLite.swift" */;
 			productName = SQLite;
+		};
+		88D94E2E2660081F0021A9B1 /* GoogleMapsUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88D94E2D2660081F0021A9B1 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */;
+			productName = GoogleMapsUtils;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have some questions to help us determine your Covid-19 contingency " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuC-Y1-Gca">
-                    <rect key="frame" x="67" y="134" width="280" height="200"/>
+                    <rect key="frame" x="67" y="133" width="280" height="200"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="GpK-22-tHR"/>
                         <constraint firstAttribute="width" constant="280" id="yPU-0K-9sL"/>
@@ -40,7 +40,7 @@
                     <color key="progressTintColor" red="1" green="0.45755505559999998" blue="0.3818738163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </progressView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aat-Si-9Dy">
-                    <rect key="frame" x="67" y="416" width="280" height="50"/>
+                    <rect key="frame" x="67" y="415" width="280" height="50"/>
                     <color key="backgroundColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="UPw-WQ-A2J"/>
@@ -55,7 +55,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbR-ct-bVm">
-                    <rect key="frame" x="67" y="490" width="280" height="50"/>
+                    <rect key="frame" x="67" y="489" width="280" height="50"/>
                     <color key="backgroundColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="280" id="0bK-Cb-TdJ"/>
@@ -70,7 +70,7 @@
                     </connections>
                 </button>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCQ-TS-EeM">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                     <textAttributes key="titleTextAttributes">
                         <color key="textColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </textAttributes>
@@ -85,16 +85,17 @@
                 <constraint firstItem="i4K-cR-SmP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0kP-05-cTD"/>
                 <constraint firstItem="aat-Si-9Dy" firstAttribute="top" secondItem="iuC-Y1-Gca" secondAttribute="bottom" constant="82" id="1LF-xl-PyV"/>
                 <constraint firstItem="sbR-ct-bVm" firstAttribute="top" secondItem="aat-Si-9Dy" secondAttribute="bottom" constant="24" id="45K-NT-yez"/>
+                <constraint firstItem="iuC-Y1-Gca" firstAttribute="top" secondItem="SCQ-TS-EeM" secondAttribute="bottom" constant="45" id="642-J0-IZc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="i4K-cR-SmP" secondAttribute="bottom" constant="30" id="6Ek-AQ-jvd"/>
                 <constraint firstItem="iuC-Y1-Gca" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="7Ri-hn-opS"/>
-                <constraint firstItem="iuC-Y1-Gca" firstAttribute="top" secondItem="SCQ-TS-EeM" secondAttribute="bottom" constant="90" id="GCX-mn-1zd"/>
-                <constraint firstItem="SCQ-TS-EeM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Kc7-yo-xH1"/>
                 <constraint firstItem="sbR-ct-bVm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="NKD-gh-bUJ"/>
+                <constraint firstItem="SCQ-TS-EeM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="OWA-ja-uhn"/>
                 <constraint firstItem="aat-Si-9Dy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Zoy-d4-21g"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iuC-Y1-Gca" secondAttribute="trailing" constant="67" id="e3M-pz-zsP"/>
+                <constraint firstItem="SCQ-TS-EeM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lDX-Bs-dkG"/>
                 <constraint firstAttribute="trailing" secondItem="SCQ-TS-EeM" secondAttribute="trailing" id="nlL-Gn-yYg"/>
                 <constraint firstItem="iuC-Y1-Gca" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="67" id="qe0-xD-LUX"/>
-                <constraint firstItem="SCQ-TS-EeM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xhA-fw-QSV"/>
+                <constraint firstItem="SCQ-TS-EeM" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qeb-mE-3ju"/>
             </constraints>
             <point key="canvasLocation" x="34.782608695652179" y="84.375"/>
         </view>

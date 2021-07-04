@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import CoreLocation
 
-struct AdminSymptomCell {
+struct AdminSymptomCellModel {
     
     let database = DataBaseModel.sharedInstance.database
     let databaseCommands = DataBaseCommands()
@@ -20,20 +21,23 @@ struct AdminSymptomCell {
     var age_60_and_aboveCell: Bool
     var sore_throatCell: String
     var shortness_of_breathCell: String
-    var locationCell: String
+    var outputCell: Int64
+    var latitudeCell: CLLocationDegrees
+    var longitudeCell: CLLocationDegrees
    
-    
     init(symptomValues: Symptom){
         symptomCellId = symptomValues.symptomId
         adminSymptomCellId = symptomValues.admin_Id
         userIdCell = symptomValues.user_Id
         feverCell = symptomValues.fever
-        locationCell = ""
         coughCell = ""
         genderCell = false
         age_60_and_aboveCell = false
         sore_throatCell = ""
         shortness_of_breathCell = ""
+        outputCell = symptomValues.output
+        latitudeCell = 41.015137
+        longitudeCell = 28.979530
     }
     
     func deleteRow()  {

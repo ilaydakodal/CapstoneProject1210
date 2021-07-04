@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct Symptom {
     var symptomId: Int
@@ -18,4 +19,7 @@ struct Symptom {
     var age_60_and_above: Bool
     var admin_Id: Int
     var user_Id: Int
+    var output: Int64
+    var lat: CLLocationDegrees = 41.015137
+    var long: CLLocationDegrees = 28.979530
 }

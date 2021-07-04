@@ -26,6 +26,7 @@ class UserListTableViewController: UITableViewController  {
         navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         loadData()

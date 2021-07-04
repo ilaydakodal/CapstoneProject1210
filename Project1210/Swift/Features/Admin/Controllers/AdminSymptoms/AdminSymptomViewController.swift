@@ -6,20 +6,35 @@
 //
 
 import UIKit
+import CoreLocation
 
 class AdminSymptomViewController: UIViewController {
     
+    let newSymptom = Symptom(symptomId: 1, fever: "",
+                             cough: "", sore_throat: "",
+                             shortness_of_breath: "", headeche: "",
+                             as_gender: true, age_60_and_above: true,admin_Id: 1, user_Id: 1, output: 0, lat: 41.0422, long: 29.0093)
+                             
+                             
+    let thisView = AdminSymptomTableViewController()
+    let database = DataBaseCommands()
+    var data: [Double] = []
+    var testModel = TestModel()
+    var model: finalmodel?
+
     @IBOutlet weak var adminNameTextField: UITextField!
     @IBOutlet weak var coughTextField: UITextField!
     @IBOutlet weak var feverTextField: UITextField!
     @IBOutlet weak var shortnessOfBreathTextField: UITextField!
     @IBOutlet weak var headacheTextField: UITextField!
     @IBOutlet weak var soreThroatTextField: UITextField!
-    @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var listButton: UIButton!
     @IBOutlet weak var genderSegmentControl: UISegmentedControl!
     @IBOutlet weak var ageSegmentControl: UISegmentedControl!
+    
+    @IBOutlet weak var latTextField: UITextField!
+    @IBOutlet weak var longTextField: UITextField!
     
     let feverArray = ["<35.0 °C (Hypothermia)",
                       "36.5–37.5 °C (Normal)",
@@ -36,6 +51,72 @@ class AdminSymptomViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        model = try? finalmodel(configuration: .init())
+    }
+    
+    @IBAction func listButtonPressed(_ sender: Any) {
+        let db = DataBaseCommands()
+        print(db.symptomList()!.count)
+        DispatchQueue.main.async {
+            self.present(AdminSymptomTableViewController(), animated: true, completion: nil)
+            self.thisView.modalPresentationStyle = .fullScreen
+        }
+    }
+    
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        coronaPrediction()
+        
+        guard let ageRange = ageSegmentControl.selectedSegmentIndex.toBool(),
+              let selectedGender = genderSegmentControl.selectedSegmentIndex.toBool(),
+              let selectedCough = coughTextField.text,
+              let selectedFever = feverTextField.text,
+              let selectSoreThroat = soreThroatTextField.text,
+              let selectedShortnessOfBreath = shortnessOfBreathTextField.text,
+              let selectedHeadache = headacheTextField.text,
+              let adminName = adminNameTextField.text,
+              let latValue = Double(latTextField.text ?? ""),
+              let longValue = Double(longTextField.text ?? "")
+        else {return}
+        
+        var newSymptom = Symptom(symptomId: 1, fever: "",
+                                 cough: "", sore_throat: "",
+                                 shortness_of_breath: "", headeche: "",
+                                 as_gender: true, age_60_and_above: true,admin_Id: 1, user_Id: 1, output: 0, lat: 41.0422, long: 29.0093)
+        
+        if let thisAdmin = database.getAdmin(adminUsername: adminName) {
+            newSymptom.as_gender = selectedGender
+            newSymptom.age_60_and_above = ageRange
+            newSymptom.cough = selectedCough
+            newSymptom.fever = selectedFever
+            newSymptom.sore_throat = selectSoreThroat
+            newSymptom.shortness_of_breath = selectedShortnessOfBreath
+            newSymptom.headeche = selectedHeadache
+            newSymptom.admin_Id = thisAdmin.adminId
+            newSymptom.user_Id = 0
+            newSymptom.lat = latValue as CLLocationDegrees
+            newSymptom.long = longValue as CLLocationDegrees
+            newSymptom.output = testModel.output
+            print(selectedCough)
+            
+            database.insertSymptoms(symptomValues: newSymptom)
+            let db = DataBaseCommands()
+            print(db.symptomList()?.count)
+        }
+    }
+        
+    @IBAction func backButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func configureView() {
+        saveButton.applyDefaultStyling(color: .black)
+        listButton.applyDefaultStyling(color: .black)
+        
         coughTextField.inputView = coughPicker
         feverTextField.inputView = feverPicker
         soreThroatTextField .inputView = soreThoratPicker
@@ -61,61 +142,6 @@ class AdminSymptomViewController: UIViewController {
         headachePicker.delegate = self
         headachePicker.dataSource = self
         headachePicker.tag = 5
-        
-       
-        
-        configureView()
-        
-    }
-    
-    let thisView = AdminSymptomTableViewController()
-    @IBAction func listButtonPressed(_ sender: Any) {
-        let db = DataBaseCommands()
-        print(db.symptomList()!.count)
-        DispatchQueue.main.async {
-            self.present(AdminSymptomTableViewController(), animated: true, completion: nil)
-            self.thisView.modalPresentationStyle = .fullScreen
-        }
-    }
-    
-    @IBAction func saveButtonPressed(_ sender: Any) {
-        
-        let db = DataBaseCommands()
-        guard let ageRange = ageSegmentControl.selectedSegmentIndex.toBool(),
-              let selectedGender = genderSegmentControl.selectedSegmentIndex.toBool(),
-              let selectedCough = coughTextField.text,
-              let selectedFever = feverTextField.text,
-              let selectSoreThroat = soreThroatTextField.text,
-              let selectedShortnessOfBreath = shortnessOfBreathTextField.text,
-              let selectedHeadache = headacheTextField.text,
-              let adminName = adminNameTextField.text
-        else {return}
-        
-        var newSymptom = Symptom(symptomId: 1, fever: "", cough: "", sore_throat: "", shortness_of_breath: "", headeche: "", as_gender: true, age_60_and_above: true, admin_Id: 1, user_Id: 1)
-        
-        if let thisAdmin = db.getAdmin(adminUsername: adminName){
-            newSymptom.as_gender = selectedGender
-            newSymptom.age_60_and_above = ageRange
-            newSymptom.cough = selectedCough
-            newSymptom.fever = selectedFever
-            newSymptom.sore_throat = selectSoreThroat
-            newSymptom.shortness_of_breath = selectedShortnessOfBreath
-            newSymptom.headeche = selectedHeadache
-            newSymptom.admin_Id = thisAdmin.adminId
-            newSymptom.user_Id = 0
-            print(selectedCough)
-            db.insertSymptoms(symptomValues: newSymptom)
-        }
-    }
-        
-    @IBAction func backButtonPressed(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
-    }
-    
-    func configureView() {
-        saveButton.applyDefaultStyling(color: .black)
-        listButton.applyDefaultStyling(color: .black)
     }
 }
 
@@ -178,23 +204,7 @@ extension AdminSymptomViewController: UIPickerViewDelegate, UIPickerViewDataSour
         }
     }
     
-   /* func createToolbar() {
-        let toolbar = UIToolbar()
-        toolbar.sizeToFit()
-        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(AdminSymptomViewController.closePickerView))
-        toolbar.setItems([doneButton], animated: false)
-        toolbar.isUserInteractionEnabled = true
-        
-        
-        coughTextField.inputAccessoryView = toolbar
-        feverTextField.inputAccessoryView = toolbar
-        shortnessOfBreathTextField.inputAccessoryView = toolbar
-        headacheTextField.inputAccessoryView = toolbar
-        
-    }*/
-    
-    @objc func closePickerView()
-    {
+    @objc func closePickerView() {
         view.endEditing(true)
     }
 }

@@ -9,6 +9,9 @@ import UIKit
 
 class AdminPageViewController: UIViewController {
     
+    let userTable = UserListTableViewController()
+    let logTable = LogTableViewController()
+    
     @IBOutlet weak var addSymptomsButton: UIButton!
     @IBOutlet weak var logButton: UIButton!
     @IBOutlet weak var userListButton: UIButton!
@@ -27,11 +30,11 @@ class AdminPageViewController: UIViewController {
     }
     
     @IBAction func logButtonPressed(_ sender: UIButton) {
-        
-        
+        DispatchQueue.main.async {
+            self.logTable.modalPresentationStyle = .fullScreen
+            self.present(self.logTable, animated: true, completion: nil)
+        }
     }
-    
-    let userTable = UserListTableViewController()
     
     @IBAction func userListButtonPressed(_ sender: UIButton) {
         DispatchQueue.main.async {

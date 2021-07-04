@@ -27,8 +27,9 @@ public class DataBaseModel {
     
     func createTable() {
         let db = DataBaseCommands()
-        DataBaseCommands.createTable()
+        db.createUserTable()
         db.createAdminTable()
         db.createSymptomTable()
+        db.guestTable()
     }
 }

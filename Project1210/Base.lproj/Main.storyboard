@@ -75,7 +75,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="gusetLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pCS-aD-YCJ"/>
+                                    <action selector="guestLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pCS-aD-YCJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -215,14 +215,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-CX-tOc">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" red="0.12995317579999999" green="0.16495552660000001" blue="0.44368329639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dV8-IT-2dg" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="mutedStandard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIh-fD-jWT">
-                                <rect key="frame" x="0.0" y="76" width="414" height="737"/>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                            </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezn-k5-IB1">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
@@ -270,9 +266,6 @@
                                                 <action selector="symptomTestButtonPressed:" destination="iOR-DA-2LR" eventType="touchUpInside" id="JMk-aK-yun"/>
                                             </connections>
                                         </button>
-                                        <connections>
-                                            <action selector="symptomTestButtonPressed:" destination="iOR-DA-2LR" id="XYY-Co-Y2W"/>
-                                        </connections>
                                     </barButtonItem>
                                 </items>
                                 <color key="barTintColor" red="0.049941800529999997" green="0.070284210149999998" blue="0.42018136379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -282,33 +275,28 @@
                         <color key="backgroundColor" red="0.5652808547" green="0.71115553379999996" blue="0.98114544150000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="systemIndigoColor"/>
                         <constraints>
-                            <constraint firstItem="7KH-CX-tOc" firstAttribute="top" secondItem="bpN-j4-eOP" secondAttribute="top" id="2DC-Qf-agO"/>
-                            <constraint firstItem="7KH-CX-tOc" firstAttribute="leading" secondItem="5j5-vq-K5R" secondAttribute="leading" id="AK2-Mx-Lrf"/>
-                            <constraint firstItem="ezn-k5-IB1" firstAttribute="top" secondItem="NIh-fD-jWT" secondAttribute="bottom" id="CG2-Mg-uth"/>
-                            <constraint firstItem="5j5-vq-K5R" firstAttribute="trailing" secondItem="7KH-CX-tOc" secondAttribute="trailing" id="Ene-Jf-9OR"/>
+                            <constraint firstItem="dV8-IT-2dg" firstAttribute="leading" secondItem="bpN-j4-eOP" secondAttribute="leading" id="4NH-Jv-wsp"/>
                             <constraint firstItem="ezn-k5-IB1" firstAttribute="trailing" secondItem="5j5-vq-K5R" secondAttribute="trailing" id="FLy-nZ-j41"/>
                             <constraint firstItem="ezn-k5-IB1" firstAttribute="leading" secondItem="5j5-vq-K5R" secondAttribute="leading" id="MwQ-pY-OS7"/>
-                            <constraint firstItem="NIh-fD-jWT" firstAttribute="top" secondItem="bpN-j4-eOP" secondAttribute="top" constant="76" id="Rdz-gK-teN"/>
                             <constraint firstItem="5j5-vq-K5R" firstAttribute="bottom" secondItem="ezn-k5-IB1" secondAttribute="bottom" id="bax-B1-BeL"/>
-                            <constraint firstItem="NIh-fD-jWT" firstAttribute="trailing" secondItem="5j5-vq-K5R" secondAttribute="trailing" id="dNz-69-G9G"/>
-                            <constraint firstItem="NIh-fD-jWT" firstAttribute="centerX" secondItem="5j5-vq-K5R" secondAttribute="centerX" id="nVh-0U-lUf"/>
-                            <constraint firstAttribute="bottom" secondItem="7KH-CX-tOc" secondAttribute="bottom" id="nZV-RD-vwt"/>
-                            <constraint firstItem="NIh-fD-jWT" firstAttribute="leading" secondItem="5j5-vq-K5R" secondAttribute="leading" id="rx3-EQ-zbK"/>
+                            <constraint firstAttribute="trailing" secondItem="dV8-IT-2dg" secondAttribute="trailing" id="l0g-kh-n0H"/>
+                            <constraint firstItem="dV8-IT-2dg" firstAttribute="top" secondItem="5j5-vq-K5R" secondAttribute="top" id="pB8-ui-z5W"/>
+                            <constraint firstAttribute="bottom" secondItem="dV8-IT-2dg" secondAttribute="bottom" id="sIe-qy-KIe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Covid-19" largeTitleDisplayMode="never" id="bSM-Y2-z9j">
                         <barButtonItem key="backBarButtonItem" title="back" id="JCa-UW-KW2"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="mapView" destination="NIh-fD-jWT" id="utL-ot-LDu"/>
+                        <outlet property="heatMapView" destination="dV8-IT-2dg" id="LxY-Ys-hEk"/>
                         <outlet property="myPageButton" destination="FH6-u8-xia" id="M98-z9-dCI"/>
                         <outlet property="pinButton" destination="hAT-Q8-uXg" id="3Jj-7J-4LR"/>
-                        <outlet property="symptomTestButton" destination="PRN-lQ-0Za" id="l0h-mc-ky5"/>
+                        <outlet property="symptomTestButton" destination="PRN-lQ-0Za" id="8o1-ZL-Pqo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxF-0a-ubi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-906" y="1359"/>
+            <point key="canvasLocation" x="-907.24637681159425" y="1358.7053571428571"/>
         </scene>
         <!--adminView-->
         <scene sceneID="f9J-VQ-fMh">
@@ -392,7 +380,7 @@
             </objects>
             <point key="canvasLocation" x="1062.3188405797102" y="977.67857142857133"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Sign Up-->
         <scene sceneID="YAo-vO-sch">
             <objects>
                 <viewController id="az9-D7-4eC" customClass="SignUpViewController" customModule="Project1210" customModuleProvider="target" sceneMemberID="viewController">
@@ -400,7 +388,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wavy_Ppl-02_Single-1" translatesAutoresizingMaskIntoConstraints="NO" id="Xig-Nb-jOE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wavy_Ppl-04_Single-4" translatesAutoresizingMaskIntoConstraints="NO" id="Xig-Nb-jOE">
                                 <rect key="frame" x="107" y="107.5" width="200" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="RoP-vY-MAR"/>
@@ -596,9 +584,10 @@
                             <constraint firstItem="2lL-br-Y0y" firstAttribute="top" secondItem="ccs-Ys-czX" secondAttribute="bottom" constant="4" id="ygo-ES-E26"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JAX-7G-qZx"/>
+                    <navigationItem key="navigationItem" title="Sign Up" id="JAX-7G-qZx"/>
                     <connections>
                         <outlet property="dateOfBirthTextField" destination="CbN-lw-Eg7" id="bFM-1p-qzm"/>
+                        <outlet property="genderImageView" destination="Xig-Nb-jOE" id="JQ0-M2-nlv"/>
                         <outlet property="genderSegmentControl" destination="hc6-7J-4Yk" id="6wt-Ym-opy"/>
                         <outlet property="nameTextField" destination="2lL-br-Y0y" id="dEI-Dt-koY"/>
                         <outlet property="passwordTextField" destination="eso-wG-rPP" id="yIL-pB-1BB"/>
@@ -683,13 +672,12 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="LkJ-nU-aPt"/>
-        <segue reference="6z4-zb-0aw"/>
+        <segue reference="rCZ-X0-pMa"/>
         <segue reference="PIS-qg-SqN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Admin" width="1396" height="1439"/>
         <image name="MainPageImage" width="7730" height="7730"/>
-        <image name="Wavy_Ppl-02_Single-1" width="7695" height="7666"/>
         <image name="Wavy_Ppl-04_Single-4" width="7324" height="7316"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="mappin.circle" catalog="system" width="128" height="121"/>
@@ -700,9 +688,6 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

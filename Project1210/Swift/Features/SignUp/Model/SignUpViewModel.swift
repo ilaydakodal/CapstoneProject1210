@@ -19,6 +19,7 @@ class SignUpViewModel {
     var gender: Bool?
     var dateOfBirth: Date?
     var userPassword: String?
+    var testApplied: Bool?
     
     init(userValues: User?) {
         self.userValues = userValues
@@ -30,5 +31,6 @@ class SignUpViewModel {
         self.gender = userValues?.gender
         self.dateOfBirth = userValues?.dateOfBirth
         self.userPassword = userValues?.userPassword
+        self.testApplied = userValues?.testApplied
     }
 }

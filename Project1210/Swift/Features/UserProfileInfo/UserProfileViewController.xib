@@ -12,8 +12,10 @@
             <connections>
                 <outlet property="changePasswordButton" destination="pMB-U9-Cvi" id="aCN-Yc-GFC"/>
                 <outlet property="dateOfBirthLabel" destination="cvD-0i-Pn7" id="n5Z-al-gCR"/>
+                <outlet property="genderImageView" destination="Gqn-Eg-djg" id="d7m-vH-Z01"/>
                 <outlet property="nameLabel" destination="AfF-42-6NZ" id="bb1-uK-2bO"/>
                 <outlet property="surnameLabel" destination="TmS-2i-FWn" id="EKT-Mi-yhC"/>
+                <outlet property="timerLabel" destination="UTl-KU-6sT" id="o50-2p-SKA"/>
                 <outlet property="usernameLabel" destination="TY8-nm-7MO" id="Znf-8a-xgN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -92,24 +94,43 @@
                                 <navigationItem title="My Information" id="d0E-lo-eCV"/>
                             </items>
                         </navigationBar>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The risk calculator will be activated after :" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2Y-l9-fkI">
+                            <rect key="frame" x="30" y="623" width="354" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.99096256490000001" green="0.63339006900000006" blue="0.2899209559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The COVID-19 quick test is active now! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTl-KU-6sT">
+                            <rect key="frame" x="60" y="673.5" width="294" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <constraints>
                         <constraint firstItem="Gqn-Eg-djg" firstAttribute="top" secondItem="tV3-ZL-faN" secondAttribute="bottom" constant="32" id="0Vy-KJ-tq7"/>
                         <constraint firstItem="cvD-0i-Pn7" firstAttribute="top" secondItem="TmS-2i-FWn" secondAttribute="bottom" constant="2" id="0hD-dg-6Fp"/>
                         <constraint firstItem="cvD-0i-Pn7" firstAttribute="trailing" secondItem="Gqn-Eg-djg" secondAttribute="trailing" id="1i3-V1-ubu"/>
+                        <constraint firstItem="D2Y-l9-fkI" firstAttribute="leading" secondItem="iBr-7f-wwC" secondAttribute="leading" constant="30" id="4LC-vG-qpJ"/>
                         <constraint firstItem="AfF-42-6NZ" firstAttribute="centerX" secondItem="iBr-7f-wwC" secondAttribute="centerX" id="4XN-kk-w1U"/>
                         <constraint firstItem="TmS-2i-FWn" firstAttribute="trailing" secondItem="Gqn-Eg-djg" secondAttribute="trailing" id="6bF-ik-Hg0"/>
                         <constraint firstItem="TY8-nm-7MO" firstAttribute="centerX" secondItem="Gqn-Eg-djg" secondAttribute="centerX" id="7Ba-7c-Vne"/>
+                        <constraint firstAttribute="trailing" secondItem="UTl-KU-6sT" secondAttribute="trailing" constant="60" id="9zO-Vg-ooB"/>
                         <constraint firstItem="tV3-ZL-faN" firstAttribute="leading" secondItem="iBr-7f-wwC" secondAttribute="leading" id="Aif-FS-jW2"/>
                         <constraint firstItem="TmS-2i-FWn" firstAttribute="leading" secondItem="Gqn-Eg-djg" secondAttribute="leading" id="Cor-1P-jw2"/>
                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pMB-U9-Cvi" secondAttribute="trailing" constant="16" id="FN6-D9-17D"/>
+                        <constraint firstItem="UTl-KU-6sT" firstAttribute="top" secondItem="D2Y-l9-fkI" secondAttribute="bottom" constant="30" id="G4D-ff-r1s"/>
                         <constraint firstItem="cvD-0i-Pn7" firstAttribute="centerX" secondItem="iBr-7f-wwC" secondAttribute="centerX" id="G4v-0q-3DQ"/>
                         <constraint firstItem="AfF-42-6NZ" firstAttribute="trailing" secondItem="Gqn-Eg-djg" secondAttribute="trailing" id="RTQ-pM-saK"/>
                         <constraint firstItem="pMB-U9-Cvi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iBr-7f-wwC" secondAttribute="leading" constant="16" id="TWr-VD-0oe"/>
+                        <constraint firstItem="UTl-KU-6sT" firstAttribute="leading" secondItem="iBr-7f-wwC" secondAttribute="leading" constant="60" id="WMq-OH-sXp"/>
                         <constraint firstItem="TY8-nm-7MO" firstAttribute="top" secondItem="Gqn-Eg-djg" secondAttribute="bottom" constant="12" id="c6M-qV-w66"/>
+                        <constraint firstItem="UTl-KU-6sT" firstAttribute="centerX" secondItem="D2Y-l9-fkI" secondAttribute="centerX" id="dNL-2M-AOl"/>
+                        <constraint firstAttribute="trailing" secondItem="D2Y-l9-fkI" secondAttribute="trailing" constant="30" id="hrW-wi-bEn"/>
                         <constraint firstItem="TmS-2i-FWn" firstAttribute="centerX" secondItem="iBr-7f-wwC" secondAttribute="centerX" id="iJ6-As-1qY"/>
+                        <constraint firstItem="D2Y-l9-fkI" firstAttribute="centerX" secondItem="pMB-U9-Cvi" secondAttribute="centerX" id="ikj-7M-IJs"/>
                         <constraint firstItem="AfF-42-6NZ" firstAttribute="top" secondItem="TY8-nm-7MO" secondAttribute="bottom" constant="30" id="ioj-cJ-RdQ"/>
                         <constraint firstItem="AfF-42-6NZ" firstAttribute="leading" secondItem="Gqn-Eg-djg" secondAttribute="leading" id="lDb-mL-2ZE"/>
+                        <constraint firstItem="D2Y-l9-fkI" firstAttribute="top" secondItem="pMB-U9-Cvi" secondAttribute="bottom" constant="60" id="lmf-0P-UVx"/>
                         <constraint firstItem="TmS-2i-FWn" firstAttribute="top" secondItem="AfF-42-6NZ" secondAttribute="bottom" constant="2" id="n0o-m1-2jA"/>
                         <constraint firstAttribute="trailing" secondItem="tV3-ZL-faN" secondAttribute="trailing" id="poZ-Id-mYd"/>
                         <constraint firstItem="Gqn-Eg-djg" firstAttribute="centerX" secondItem="iBr-7f-wwC" secondAttribute="centerX" id="sDM-V2-htB"/>

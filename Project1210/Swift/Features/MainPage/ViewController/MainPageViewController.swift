@@ -22,8 +22,13 @@ class MainPageViewController: UIViewController {
         database.createAdminTable()
         database.createSymptomTable()
     }
-
-    @IBAction func gusetLoginPressed(_ sender: Any) {
+    
+    @IBAction func guestLoginPressed(_ sender: Any) {
+        database.insertGuest(guestValues: Guest())
+        if let number = database.getGuestList()?.count {
+            print("Guest Number: \(number)")
+        }
+        
         DispatchQueue.main.async {
             self.performSegue(withIdentifier: "guestToMap", sender: nil)
         }

@@ -10,7 +10,7 @@ import SQLite
 
 class LoginViewController: UIViewController {
     
-    var user = User(id: 1, userName: "", name: "", surname: "", gender: true, dateOfBirth: "".dateFromISO8601!, userPassword: "")
+    var user = User(id: 1, userName: "", name: "", surname: "", gender: true, dateOfBirth: "".dateFromISO8601!, userPassword: "", testApplied:  false, currentDate: "", eventDate: "", userLat: 41.0422, userLong: 29.0093)
 
     let database = DataBaseCommands()
     let signUp = SignUpViewController()
